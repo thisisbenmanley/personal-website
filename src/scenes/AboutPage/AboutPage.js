@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import {FaLinkedinIn, FaGithub, FaStackOverflow} from 'react-icons/fa';
 
 import portrait from './Ben_Manley_Portrait.jpg';
 import palmIcon from './palm-icon.png';
@@ -12,12 +14,22 @@ import '../../components/Header.css'
 function AboutPage() {
     const [loading, setLoading] = useState(true);
 
+    // Help remove glitchy image load
     function imgLoaded() {
         setLoading(false);
     }
 
+    const colors = {
+        "miami": "#6fb61b",
+        "michigan": "#ffcb05",
+        "cs": "#8392ff",
+        "film": "#ff4800",
+        "work": "#ffdc7c"
+    }
+
     return (
-        <div className="about-page about-page-media">
+        <div className="about-page about-page-media"
+            style={loading ? {} : {animationName: "about-page-entrance"}}>
 
             <img className="about-portrait about-portrait-media"
                 src={portrait}
@@ -29,23 +41,41 @@ function AboutPage() {
                 <div id="about-header-spacer-logic">
                     <div className="header-spacer"/>
                 </div>
-                <div id="about-hello">
-                    <strong>Hello there!</strong><br/>I'm Ben Manley.
+
+                <div id="about-top">
+                    <div id="about-hello">
+                        <i>Hello there!</i><br/>I'm Ben Manley.
+                    </div>
+
+                    <div>
+                        <div className="about-button-container about-button-container-media">
+                            <a className="about-button" href="https://www.linkedin.com/in/benjamin-manley/">
+                                <FaLinkedinIn style={{color: "#0077B5"}} className="logo-svg" />
+                            </a>
+                            <a className="about-button" href="https://github.com/thisisbenmanley">
+                                <FaGithub style={{color: "white"}} className="logo-svg" />
+                            </a>
+                            <a className="about-button" href="https://stackoverflow.com/users/11910197/thisisbenmanley?tab=profile">
+                                <FaStackOverflow style={{color: "#F48024"}} className="logo-svg" />
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
+                {/* Big About-List Section */}
                 <div className="about-li-container about-li-container-media">
                     <div className="about-li about-li-iconIsLeft">
                         <img src={palmIcon} alt="palm tree icon" />
                         <div>
-                            I was born and raised in <strong className="nowrap">Miami, FL.</strong>
+                            I was born and raised in <i style={{color: colors["miami"]}} className="nowrap">Miami, FL.</i>
                         </div>
                     </div>
                 </div>
                 <div className="about-li-container about-li-container-media">
                     <div className="about-li about-li-iconIsRight">
                         <div>
-                            I'm graduating from the <strong>University of Michigan</strong> in 2022 with
-                            a <strong>Master's in Computer Science Engineering</strong> and an undergraduate
+                            I'm graduating from the <i style={{color: colors["michigan"]}}>University of Michigan</i> in 2022 with
+                            a <i style={{color: colors["michigan"]}}>Master's in Computer Science Engineering</i> and an undergraduate
                             minor in Physics.
                         </div>
                         <img src={blockMIcon} alt="block M icon" />
@@ -55,18 +85,18 @@ function AboutPage() {
                     <div className="about-li about-li-iconIsLeft">
                         <img src={htmlTagIcon} alt="html tag icon" />
                         <div>
-                            I plan to explore as many topics within Computer Science as I can. So far, I've dug deepest
-                            into <strong>embedded systems</strong> and <strong>real-time programming</strong>, and I'm dabbling in
-                            web development <span className="">(check <a href="/" className="about-a">this cool website</a> out!).</span>
+                            I plan to explore as many topics within Computer Science as I can. <NavLink style={{color: colors["cs"]}} to="/projects" className="about-a">So far</NavLink>, I've dug deepest
+                            into <i style={{color: colors["cs"]}}>embedded systems</i> and <i style={{color: colors["cs"]}}>real-time programming</i>, and I'm dabbling in
+                            web development <span className="">(check <a style={{color: colors["cs"]}} href="/" className="about-a">this cool website</a> out!).</span>
                         </div>
                     </div>
                 </div>
                 <div className="about-li-container about-li-container-media">
                     <div className="about-li about-li-iconIsRight">
                         <div>
-                            I'm also passionate about <a href="/films" className="about-a">filmmaking</a> and enjoy every step of the production
-                            process. My experiences have focused on <strong>directing</strong>, <strong>producing</strong>, <strong>editing</strong>,
-                            and <strong>audio recording</strong>.
+                            I'm also passionate about <NavLink style={{color: colors["film"]}} to="/films" className="about-a">filmmaking</NavLink> and enjoy every step of the production
+                            process. My experiences have focused on <i style={{color: colors["film"]}}>directing</i>, <i style={{color: colors["film"]}}>producing</i>, <i style={{color: colors["film"]}}>editing</i>,
+                            and <i style={{color: colors["film"]}}>audio recording</i>.
                         </div>
                         <img src={filmIcon} alt="film icon" />
                     </div>
@@ -75,12 +105,23 @@ function AboutPage() {
                     <div className="about-li about-li-iconIsLeft">
                         <img src={workIcon} alt="work icon" />
                         <div>
-                            Last summer (2019), I completed an internship with <a href="https://honeybeerobotics.com" className="about-a nowrap">Honeybee Robotics</a> in
+                            Last summer (2019), I completed an internship with <a style={{color: colors["work"]}} href="https://honeybeerobotics.com" className="about-a nowrap">Honeybee Robotics</a> in
                             Pasadena, CA. This summer (2020), I'll be completing a virtual internship with
-                            the <a href="https://www.microsoft.com/en-us/garage/" className="about-a nowrap">Microsoft Garage</a>.
+                            the <a style={{color: colors["work"]}} href="https://www.microsoft.com/en-us/garage/" className="about-a nowrap">Microsoft Garage</a>.
                         </div>
                     </div>
                 </div>
+
+                {/* Resume Line */}
+                <div className="about-li-container about-li-container-media">
+                    <div id="resume-line">
+                        For more information: if you prefer crowded text on a white background, check out my <NavLink to="/resume" className="about-a">resumé</NavLink>,
+                        or just{" "}
+                        <a href="mailto:ben@benmanley.dev" className="about-a nowrap">email me</a>!
+                    </div>
+                </div>
+
+                {/* Fun Facts Section */}
                 <div className="about-li-container about-li-container-media">
                     <br/><br/>
                     <div id="fun-facts">Fun Facts</div>
@@ -105,8 +146,6 @@ function AboutPage() {
                         </li>
                     </ul>
                 </div>
-
-                Links to LinkedIn, Github, StackOverflow
             </div>
         </div>
     );
