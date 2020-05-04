@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/personal-website/static/css/main.9e587ac8.chunk.css",
+    "main.js": "/personal-website/static/js/main.0e0fc433.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.0e0fc433.chunk.js.map",
+    "runtime-main.js": "/personal-website/static/js/runtime-main.4ebd56ec.js",
+    "runtime-main.js.map": "/personal-website/static/js/runtime-main.4ebd56ec.js.map",
+    "static/js/2.7145bfc3.chunk.js": "/personal-website/static/js/2.7145bfc3.chunk.js",
+    "static/js/2.7145bfc3.chunk.js.map": "/personal-website/static/js/2.7145bfc3.chunk.js.map",
+    "index.html": "/personal-website/index.html",
+    "precache-manifest.74bc2fc4207c421ad7dca87c9910b59f.js": "/personal-website/precache-manifest.74bc2fc4207c421ad7dca87c9910b59f.js",
+    "service-worker.js": "/personal-website/service-worker.js",
+    "static/css/main.9e587ac8.chunk.css.map": "/personal-website/static/css/main.9e587ac8.chunk.css.map",
+    "static/js/2.7145bfc3.chunk.js.LICENSE.txt": "/personal-website/static/js/2.7145bfc3.chunk.js.LICENSE.txt",
+    "static/media/Ben_Manley_Portrait.jpg": "/personal-website/static/media/Ben_Manley_Portrait.484d10de.jpg",
+    "static/media/Ben_Manley_Resume.pdf": "/personal-website/static/media/Ben_Manley_Resume.f523f13f.pdf",
+    "static/media/blockm-icon.png": "/personal-website/static/media/blockm-icon.91a2534d.png",
+    "static/media/film-icon.png": "/personal-website/static/media/film-icon.ff65f869.png",
+    "static/media/html-tag-icon.png": "/personal-website/static/media/html-tag-icon.5903fb3a.png",
+    "static/media/palm-icon.png": "/personal-website/static/media/palm-icon.88086cd4.png",
+    "static/media/work-icon.png": "/personal-website/static/media/work-icon.b06af656.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4ebd56ec.js",
+    "static/js/2.7145bfc3.chunk.js",
+    "static/css/main.9e587ac8.chunk.css",
+    "static/js/main.0e0fc433.chunk.js"
+  ]
+}
