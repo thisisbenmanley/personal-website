@@ -1,0 +1,74 @@
+
+@keyframes first-menu-animation {
+    from {top: 150%}
+    to {top: 50%}
+    30% {opacity: 0}
+    100% {opacity: 1}
+}
+.menu-item-container {
+    position: relative;
+    top: 150%;
+    opacity: 0;
+    /* Height slightly larger than text size so
+       THIS will always be mouseentered first */
+    height: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    animation-name: first-menu-animation;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+
+.menu-item {
+    position: relative;
+    top: 0%;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: 'Jost';
+    opacity: 0.75;
+    transition-duration: 0.15s;
+}
+.menu-item-container:hover .menu-item {
+    opacity: 1;
+    top: -5%;
+    padding-bottom: 3px;
+}
+/* .menu-item-container:hover .menu-item-active:after {
+    opacity: 1;
+    top: -5%;
+    padding-bottom: 3px;
+} */
+
+
+/* Bottom border transition to red on-active */
+@keyframes menu-item-active-anim {
+    to {border-bottom-color: red}
+}
+.menu-item-active {
+    animation-name: menu-item-active-anim;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    border-bottom-color: white;
+}
+/* @keyframes menu-item-active-anim {
+    from {width: 0%}
+    to {width: 100%}
+}
+.menu-item-active:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 0%;
+    border-bottom: 2px solid red;
+    opacity: 0.75;
+    transition-duration: 0.15s;
+    animation-name: menu-item-active-anim;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+} */

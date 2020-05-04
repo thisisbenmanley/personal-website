@@ -1,0 +1,142 @@
+
+@keyframes about-page-entrance {
+    to {opacity: 1}
+}
+.about-page {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    opacity: 0;
+    animation-name: about-page-entrance;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+@media (min-width: 800px) {
+    .about-page-media {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+}
+@media (max-width: 799px) {
+    .about-page-media {
+        overflow-x: auto;
+    }
+}
+
+
+.about-portrait {
+    max-width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+@media (min-width: 800px) {
+    .about-portrait-media {
+        position: sticky;
+        height: 100vh;
+        flex-shrink: 10;
+        flex-basis: auto;
+    }
+}
+@media (max-width: 799px) {
+    .about-portrait-media {
+        position: relative;
+        height: 50vh;
+        width: 100%;
+        object-position: 0 25%;
+    }
+}
+
+
+#about-div {
+    position: relative;
+    height: 100%;
+
+    flex-shrink: 1;
+    flex-basis: 57%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+
+@media (min-width: 800px) {
+    #about-header-spacer-logic {
+        display: initial;
+    }
+}
+@media (max-width: 799px) {
+    #about-header-spacer-logic {
+        display: none;
+    }
+}
+
+
+#about-hello {
+    font-size: 50px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+
+.about-li-container {
+    margin: 8% auto;
+}
+@media (min-width: 800px) {
+    .about-li-container-media {
+        width: 70%;
+    }
+}
+@media (max-width: 799px) {
+    .about-li-container-media {
+        max-width: 90%;
+    }
+}
+.about-li {
+    font-size: 20px;
+    width: 100%;
+    justify-content: space-between;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.about-li img {
+    height: 55px;
+}
+.about-li-iconIsLeft {
+    text-align: right;
+}
+.about-li-iconIsLeft img {
+    padding-right: 5%;
+}
+.about-li-iconIsRight img {
+    padding-left: 5%;
+}
+
+
+.about-a {
+    text-decoration: none;
+    color: cyan;
+}
+
+
+.nowrap {
+    white-space: nowrap;
+}
+
+
+#fun-facts {
+    font-size: 25px;
+    border-bottom: 1px solid white;
+}
+#fun-facts-list {
+    font-size: 20px;
+}
+.fun-facts-li {
+    padding-bottom: 2%;
+}

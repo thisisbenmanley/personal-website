@@ -1,0 +1,7 @@
+
+#resume-iframe {
+    position: absolute;
+    /* -1 on these to remove scrollbars */
+    width: 99%;
+    height: 89%;
+}
