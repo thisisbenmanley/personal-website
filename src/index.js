@@ -21,7 +21,6 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet"/>
-      <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet"/>
       <div id="index-div">
         <Header />
         <Switch>

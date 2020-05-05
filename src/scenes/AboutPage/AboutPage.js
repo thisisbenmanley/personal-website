@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import {FaLinkedinIn, FaGithub, FaStackOverflow} from 'react-icons/fa';
 
-import portrait from './Ben_Manley_Portrait.jpg';
+import portrait from './Ben_Manley_Portrait.png';
 import palmIcon from './palm-icon.png';
 import blockMIcon from './blockm-icon.png';
 import htmlTagIcon from './html-tag-icon.png';
@@ -24,7 +24,7 @@ function AboutPage() {
         "michigan": "#ffcb05",
         "cs": "#8392ff",
         "film": "#ff4800",
-        "work": "#ffdc7c"
+        "work": "#68e85f"
     }
 
     return (
@@ -42,13 +42,13 @@ function AboutPage() {
                     <div className="header-spacer"/>
                 </div>
 
-                <div id="about-top">
+                <div className="about-top about-top-media">
                     <div id="about-hello">
                         <i>Hello there!</i><br/>I'm Ben Manley.
                     </div>
 
                     <div>
-                        <div className="about-button-container about-button-container-media">
+                        <div className="about-button-container">
                             <a className="about-button" href="https://www.linkedin.com/in/benjamin-manley/">
                                 <FaLinkedinIn style={{color: "#0077B5"}} className="logo-svg" />
                             </a>
@@ -67,15 +67,15 @@ function AboutPage() {
                     <div className="about-li about-li-iconIsLeft">
                         <img src={palmIcon} alt="palm tree icon" />
                         <div>
-                            I was born and raised in <i style={{color: colors["miami"]}} className="nowrap">Miami, FL.</i>
+                            I was born and raised in <span className="nowrap about-emphasis">Miami, FL</span>.
                         </div>
                     </div>
                 </div>
                 <div className="about-li-container about-li-container-media">
                     <div className="about-li about-li-iconIsRight">
                         <div>
-                            I'm graduating from the <i style={{color: colors["michigan"]}}>University of Michigan</i> in 2022 with
-                            a <i style={{color: colors["michigan"]}}>Master's in Computer Science Engineering</i> and an undergraduate
+                            I'm graduating from the <span className="about-emphasis">University of Michigan</span> in 2022 with
+                            a <a style={{color: colors["michigan"]}} href="https://cse.engin.umich.edu/" className="about-a">Master's in Computer Science Engineering</a> and an undergraduate
                             minor in Physics.
                         </div>
                         <img src={blockMIcon} alt="block M icon" />
@@ -85,9 +85,9 @@ function AboutPage() {
                     <div className="about-li about-li-iconIsLeft">
                         <img src={htmlTagIcon} alt="html tag icon" />
                         <div>
-                            I plan to explore as many topics within Computer Science as I can. <NavLink style={{color: colors["cs"]}} to="/projects" className="about-a">So far</NavLink>, I've dug deepest
-                            into <i style={{color: colors["cs"]}}>embedded systems</i> and <i style={{color: colors["cs"]}}>real-time programming</i>, and I'm dabbling in
-                            web development <span className="">(check <a style={{color: colors["cs"]}} href="/" className="about-a">this cool website</a> out!).</span>
+                            I plan to explore as many topics within Computer Science as I can. So far, my <NavLink style={{color: colors["cs"]}} to="/projects" className="about-a">projects</NavLink>{" "}
+                            have focused on <span className="about-emphasis">embedded systems</span> and <span className="about-emphasis">real-time programming</span>, and I'm dabbling in
+                            web development <span>(check <a style={{color: colors["cs"]}} href="/" className="about-a">this cool website</a> out!).</span>
                         </div>
                     </div>
                 </div>
@@ -95,8 +95,8 @@ function AboutPage() {
                     <div className="about-li about-li-iconIsRight">
                         <div>
                             I'm also passionate about <NavLink style={{color: colors["film"]}} to="/films" className="about-a">filmmaking</NavLink> and enjoy every step of the production
-                            process. My experiences have focused on <i style={{color: colors["film"]}}>directing</i>, <i style={{color: colors["film"]}}>producing</i>, <i style={{color: colors["film"]}}>editing</i>,
-                            and <i style={{color: colors["film"]}}>audio recording</i>.
+                            process. My experiences have focused on <span className="about-emphasis">directing</span>, <span className="about-emphasis">producing</span>, <span className="about-emphasis">editing</span>,
+                            and <span className="about-emphasis">audio recording</span>.
                         </div>
                         <img src={filmIcon} alt="film icon" />
                     </div>
@@ -114,6 +114,7 @@ function AboutPage() {
 
                 {/* Resume Line */}
                 <div className="about-li-container about-li-container-media">
+                    <br/>
                     <div id="resume-line">
                         For more information: if you prefer crowded text on a white background, check out my <NavLink to="/resume" className="about-a">resumé</NavLink>,
                         or just{" "}
@@ -123,7 +124,7 @@ function AboutPage() {
 
                 {/* Fun Facts Section */}
                 <div className="about-li-container about-li-container-media">
-                    <br/><br/>
+                    <br/>
                     <div id="fun-facts">Fun Facts</div>
                     <ul id="fun-facts-list">
                         <li className="fun-facts-li">

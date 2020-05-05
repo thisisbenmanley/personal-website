@@ -77,15 +77,24 @@
 }
 
 
-#about-top {
+.about-top {
     margin-top: 5%;
     margin-bottom: 5vh;
-    width: 100%;
     display: inline-flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+@media (min-width: 800px) {
+    .about-top-media {
+        width: 86%;
+    }
+}
+@media (max-width: 799px) {
+    .about-top-media {
+        width: 100%;
+    }
 }
 
 
@@ -117,6 +126,7 @@
     justify-content: center;
     align-items: center;
     transition-duration: 0.4s;
+    border-radius: 50%;
 }
 .about-button .logo-svg {
     font-size: 30px;
@@ -163,6 +173,12 @@
 }
 .about-li-iconIsRight img {
     padding-left: 5%;
+}
+
+
+.about-emphasis {
+    font-style: italic;
+    font-weight: 500;
 }
 
 
