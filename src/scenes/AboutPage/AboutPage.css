@@ -6,6 +6,7 @@
     position: relative;
     height: 100%;
     width: 100%;
+    z-index: 1;
 
     opacity: 0;
     /* animation-name is applied on image load */
@@ -28,6 +29,20 @@
 }
 
 
+#header-background {
+    position: fixed;
+    height: 18%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(
+        to bottom, rgb(25,25,25), rgb(25,25,25) 35%, transparent
+    );
+    z-index: 1;
+}
+
+
 .about-portrait {
     max-width: 100%;
     object-fit: cover;
@@ -35,6 +50,7 @@
     top: 0;
     bottom: 0;
     left: 0;
+    z-index: 2;
 }
 @media (min-width: 800px) {
     .about-portrait-media {

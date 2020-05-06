@@ -1,61 +1,22 @@
 
+/* Animation for header items to enter */
 @keyframes header-entrance {
     from {top: -100px}
     to {top: 0;}
 }
-#header {
-    position: fixed;
-    height: 8%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
-
-    display: inline-flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
-    animation-name: header-entrance;
-    animation-duration: 1.2s;
-}
 
 
-#header-left {
-    position: relative;
-    height: 100%;
-    flex-shrink: 1;
-    flex-basis: 30%;
-    padding: 10px;
-}
-#header-right {
-    position: relative;
-    height: 100%;
-    white-space: nowrap;
-    padding-right: 20px;
-    
-    display: inline-flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    flex-basis: 40%;
-}
-
-
+/* Ben Manley on left side of header */
 .my-name {
-    position: relative;
-    left: 5px;
-
-    height: 100%;
+    position: fixed;
+    margin: 10px;
+    z-index: 4;
     
-    /* color: white; */
     color: #ffc1cc;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
-    animation-name: name-rainbow;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-play-state: paused;
+    animation-name: header-entrance;
+    animation-duration: 1.2s;
 }
 @media (min-width: 580px) {
     .my-name-media {
@@ -68,11 +29,101 @@
     .my-name-media {
         font-size: 25px;
         white-space: wrap;
+        width: 10%;
         line-height: 90%;
     }
 }
 
 
+/* Menu on right side of header */
+.header-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 18vh;
+    white-space: nowrap;
+    
+    display: inline-flex;
+    flex-wrap: nowrap;
+
+    z-index: 2;
+}
+@media (min-width: 500px) {
+    .header-right-media {
+        width: 100vw;
+        margin-right: 20px;
+
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        animation-name: header-entrance;
+        animation-duration: 1.2s;
+    }
+}
+@media (max-width: 499px) {
+    .header-right-media {
+        padding-right: 5%;
+        padding-left: 20%;
+        padding-top: 60px;
+        padding-bottom: 5%;
+        right: -200px;
+        opacity: 0;
+
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        transition-duration: 0.4s;
+    }
+}
+@media (max-width: 499px) {
+    .header-open {
+        right: 0;
+        opacity: 1;
+        background-image: linear-gradient(
+            to left, black, transparent
+        );
+    }
+}
+@media (min-width: 500px) {
+    .header-right-spacer {
+        min-width: 20%;
+        flex-basis: 60%;
+    }
+}
+
+
+/* Burger menu icon */
+@media (min-width: 500px) {
+    .burger-menu-icon-container {
+        display: none;
+    }
+}
+@media (max-width: 499px) {
+    .burger-menu-icon-container {
+        position: fixed;
+        width: 100vw;
+        text-align: right;
+        z-index: 3;
+
+        animation-name: header-entrance;
+        animation-duration: 1.2s;
+    }
+    .burger-menu-icon {
+        margin-top: 4%;
+        margin-right: 4%;
+        font-size: 35px;
+        color: white;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+    .burger-open {
+        transform: rotate(90deg);
+    }
+}
+
+
+/* Used externally */
 .header-spacer {
     position: relative;
     height: 12%;

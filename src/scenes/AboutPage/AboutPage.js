@@ -31,6 +31,8 @@ function AboutPage() {
         <div className="about-page about-page-media"
             style={loading ? {} : {animationName: "about-page-entrance"}}>
 
+            <div id="header-background" />
+
             <img className="about-portrait about-portrait-media"
                 src={portrait}
                 alt="Ben Manley Portrait"
