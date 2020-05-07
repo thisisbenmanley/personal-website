@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import './Film.css';
+import '../../../common.css'
 
 function Film(props) {
 
@@ -12,7 +13,8 @@ function Film(props) {
         // filmTop represents distance (signed) from top of el to top of window
         // filmTop + 600 == 0 ==> 0%
         // filmTop == windowHeight ==> 100%
-        let percentCalc = 100 * (filmTop + 500) / (windowHeight + 500);
+        // The 600 should be a 500 on mobile, but it still looks fine with this math
+        let percentCalc = 100 * (filmTop + 600) / (windowHeight + 600);
         percentCalc = (percentCalc > 100) ? 100 : percentCalc;
         percentCalc = (percentCalc < 0) ? 0 : percentCalc;
         setPercentPastFilm(percentCalc);
@@ -20,7 +22,9 @@ function Film(props) {
 
     function updateWindowDimensions() {
         setWindowHeight(window.innerHeight);
-        updatePercentPastFilm(filmElement.getBoundingClientRect()["top"]);
+        if (filmElement != null) {
+            updatePercentPastFilm(filmElement.getBoundingClientRect()["top"]);
+        }
     }
 
     function handleScroll() {
@@ -33,47 +37,37 @@ function Film(props) {
         updateWindowDimensions();
         handleScroll();
         window.addEventListener('resize', updateWindowDimensions);
-        window.addEventListener('scroll', handleScroll);
+        if (filmElement != null) {
+            filmElement.parentElement.addEventListener('scroll', handleScroll);
+        }
 
         return function() {
             window.removeEventListener('resize', updateWindowDimensions);
-            window.removeEventListener('scroll', handleScroll);
+            if (filmElement != null) {
+                filmElement.parentElement.removeEventListener('scroll', handleScroll);
+            }
         }
     });
 
-    let zIndexCalc = (percentPastFilm >= 30 && percentPastFilm <= 70) ? 1 : 5;
-    let opacityCalc = (percentPastFilm >= 30 && percentPastFilm <= 70) ? 0.1 : 1;
+    let blurCalc = (percentPastFilm >= 27 && percentPastFilm <= 73) ? "none" : "blur(4px)";
 
     return(
-        <div ref={(filmEl) => {filmElement = filmEl}} className="film-main">
-            <img src={props.stillSrc} className="film-still"
-                style={{
-                    // objectPosition: "0 " + percentPastFilm+"%",
-                    zIndex: zIndexCalc,
-                    opacity: opacityCalc
-                }} />
-            <div className="film-title">{props.title}</div>
+        <div ref={(el) => {filmElement = el}} className="film-main"
+            style={{ filter: blurCalc, visibility: props.loading ? "hidden" : "visible" }}>
+            <img onLoad={props.imgLoaded} src={props.stillSrc} className="film-still" 
+                alt={"'" + props.title + "' Film Still"}/>
             <div className="film-inner">
-                <img src={props.posterSrc} className="film-poster" />
                 <div className="film-info">
-                    <table><tbody>
-                        <tr>
-                            <th>My Roles</th>
-                            <td>{props.roles}</td>
-                        </tr>
-                        <tr>
-                            <th>Director</th>
-                            <td>{props.director}</td>
-                        </tr>
-                        <tr>
-                            <th>Prod. by</th>
-                            <td>{props.producedBy}</td>
-                        </tr>
-                    </tbody></table>
+                    <a href={props.videoLink} className="film-title">{props.title}</a>
+                    <div className="film-roles">{props.roles}</div>
+                    <div className="film-awards">{props.awards}</div>
                     <br/>
                     <div className="film-description">{props.description}</div>
                 </div>
-                <iframe className="film-embed" src={props.embedSrc} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
+            </div>
+            <div className="film-dirprod">
+                Directed by {props.director}<br/>
+                Produced by {props.producedBy}
             </div>
         </div>
     );

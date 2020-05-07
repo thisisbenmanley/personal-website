@@ -15,8 +15,8 @@
 @media (min-width: 500px) {
     .menu-item-container-media {
         top: 150%;
-        margin-right: 10px;
-        margin-left: 10px;
+        /* margin-right: 10px; */
+        margin-left: 20px;
         opacity: 0;
         animation-name: first-menu-animation;
         animation-duration: 1.2s;

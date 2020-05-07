@@ -1,6 +1,13 @@
 
+#resume-page {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
 #resume-iframe {
-    position: absolute;
+    position: relative;
     /* -1 on these to remove scrollbars */
     width: 99%;
     height: 87%;

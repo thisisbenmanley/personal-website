@@ -1,10 +1,19 @@
 
 .film-main {
     position: relative;
-    height: 500px;
-    width: 100vw;
-    /* padding-bottom: 30px; */
+    width: 100%;
     z-index: 0;
+    transition-duration: 0.5s;
+}
+@media (min-width: 500px) {
+    .film-main {
+        height: 600px;
+    }
+}
+@media (max-width: 499px) {
+    .film-main {
+        height: 500px;
+    }
 }
 
 
@@ -12,71 +21,79 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0.1;
+    opacity: 0.8;
     z-index: 1;
-
     object-fit: cover;
-    /* object-position: 0% 0; */
-    transition-duration: 0.5s;
-}
-/* .film-main:hover .film-still {
-    width: 105%;
-} */
-
-
-.film-title {
-    position: absolute;
-    /* width: 97%; */
-    top: 3%;
-    left: 2%;
-    font-size: 40px;
-    font-family: 'Jost';
-    font-style: italic;
-    /* padding-left: 20px; */
 }
 
 
 .film-inner {
     position: absolute;
-    height: 90%;
-    top: 13%;
-    width: 98%;
+    height: 100%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
     z-index: 2;
 
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    display: flex;
     align-items: center;
 }
 
 
-.film-poster {
-    height: 300px;
-    flex-basis: auto;
-    flex-shrink: 2;
-}
-
-
 .film-info {
-    font-size: 20px;
     margin: 20px;
-    flex-basis: 40%;
+    flex-basis: 600px;
 
     display: inline-flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 }
 .film-info th {
-    text-align: end;
-    /* width: 30%; */
-    padding-right: 15px;
+    padding-right: 25px;
+}
+@media (min-width: 500px) {
+    .film-info {
+        font-size: 20px;
+    }
+}
+@media (max-width: 499px) {
+    .film-info {
+        font-size: 15px;
+    }
+}
+
+
+.film-title {
+    font-size: 200%;
+    line-height: 100%;
+    font-family: 'Jost';
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 10px;
+    z-index: 2;
+
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+.film-title:hover {
+    opacity: 0.5;
+}
+
+
+.film-roles {
+    font-weight: 600;
+}
+
+
+.film-awards {
+    padding-left: 30px;
+    font-style: italic;
+    font-weight: 600;
 }
 
 
@@ -85,7 +102,20 @@
 }
 
 
-.film-embed {
-    height: 300px;
-    width: calc(300px * 16 / 9);
+.film-dirprod {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 2;
+    text-align: right;
+}
+@media (min-width: 500px) {
+    .film-dirprod {
+        font-size: 17px;
+    }
+}
+@media (max-width: 499px) {
+    .film-dirprod {
+        font-size: 13px;
+    }
 }

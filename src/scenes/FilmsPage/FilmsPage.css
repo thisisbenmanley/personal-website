@@ -4,14 +4,15 @@
 }
 .films-page {
     position: relative;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 
     opacity: 0;
-    /* animation-name is applied on image load */
-    animation-name: films-page-entrance;
+    /* animation-name is applied on first film's image load */
+    /* animation-name: films-page-entrance; */
     animation-duration: 0.4s;
     animation-fill-mode: forwards;
+    overflow-y: scroll;
 }
 
 
@@ -32,8 +33,55 @@
 #filmspage-title {
     position: relative;
     width: 100%;
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 35px;
+    font-weight: 600;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+}
+#filmspage-instructions {
+    position: relative;
+    width: 100%;
+    font-family: 'Jost';
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+
+#other-works-title {
+    position: relative;
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 40px;
+}
+#other-works {
+    width: 90%;
+    margin: 40px auto;
+}
+#other-works th {
+    font-family: 'Jost';
+    font-style: italic;
+    text-align: right;
+    vertical-align: top;
+    padding-right: 15px;
+    width: 50%;
+}
+#other-works td {
+    padding-left: 15px;
+}
+#other-works th, td {
+    padding-bottom: 10px;
+}
+@media (min-width: 500px) {
+    #other-works {
+        font-size: 20px;
+    }
+}
+@media (max-width: 499px) {
+    #other-works {
+        font-size: 15px;
+    }
 }

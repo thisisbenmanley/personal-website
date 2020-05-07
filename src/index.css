@@ -8,6 +8,8 @@ body {
 
   background-color: rgb(25, 25, 25);
   color: white;
+  /* overflow-y: hidden; */
+  /* overflow-x: auto; */
 }
 
 code {
@@ -17,6 +19,10 @@ code {
 
 #index-div {
   position: absolute;
+  /* Removing this fixed a bug involving overflow-x
+     and a difference in header position between the
+     About and Films pages */
   height: 100%;
   width: 100%;
+  overflow-y: hidden;
 }

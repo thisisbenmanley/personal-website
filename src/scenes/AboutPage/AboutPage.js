@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import {FaLinkedinIn, FaGithub, FaStackOverflow} from 'react-icons/fa';
 
@@ -18,6 +18,14 @@ function AboutPage() {
     function imgLoaded() {
         setLoading(false);
     }
+
+    useEffect(function() {
+        document.body.style.overflowY = "hidden";
+
+        return function() {
+            document.body.style.overflowY = "unset";
+        }
+    });
 
     const colors = {
         "miami": "#6fb61b",

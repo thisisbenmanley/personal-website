@@ -6,10 +6,10 @@ import '../../components/Header.css'
 
 function ResumePage() {
     return (
-        <>
-        <div className="header-spacer" />
-        <iframe src={pdf} title="Ben's Resumé" id="resume-iframe" />
-        </>
+        <div id="resume-page">
+            <div className="header-spacer" />
+            <iframe src={pdf} title="Ben's Resumé" id="resume-iframe" />
+        </div>
     );
 }
 

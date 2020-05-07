@@ -4,9 +4,10 @@
 }
 .about-page {
     position: relative;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     z-index: 1;
+    overflow-x: auto;
 
     opacity: 0;
     /* animation-name is applied on image load */
@@ -19,19 +20,13 @@
         display: inline-flex;
         flex-wrap: nowrap;
         flex-direction: row;
-        overflow-x: auto;
-    }
-}
-@media (max-width: 799px) {
-    .about-page-media {
-        overflow-x: auto;
     }
 }
 
 
 #about-header-bkgd {
     position: fixed;
-    height: 18%;
+    height: 18vh;
     width: 100%;
     top: 0;
     left: 0;
@@ -46,7 +41,8 @@
 .about-portrait {
     max-width: 100%;
     object-fit: cover;
-    overflow: hidden;
+    /* overflow-x: hidden;
+    overflow-y: auto; */
     top: 0;
     bottom: 0;
     left: 0;
@@ -72,7 +68,7 @@
 
 #about-div {
     position: relative;
-    height: 100%;
+    height: 100vh;
 
     flex-shrink: 1;
     flex-basis: 57%;
