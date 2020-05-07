@@ -1,0 +1,18 @@
+
+.header-spacer {
+    position: relative;
+    height: 12vh;
+}
+
+
+.link-style {
+    text-decoration: none;
+    color: cyan;
+    transition-duration: 0.2s;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-bottom: 1px;
+  }
+.link-style:hover {
+    opacity: 0.75;
+}

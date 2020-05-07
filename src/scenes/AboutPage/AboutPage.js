@@ -9,7 +9,7 @@ import htmlTagIcon from './html-tag-icon.png';
 import filmIcon from './film-icon.png';
 import workIcon from './work-icon.png';
 import './AboutPage.css';
-import '../../components/Header.css'
+import '../../common.css'
 
 function AboutPage() {
     const [loading, setLoading] = useState(true);
@@ -31,7 +31,7 @@ function AboutPage() {
         <div className="about-page about-page-media"
             style={loading ? {} : {animationName: "about-page-entrance"}}>
 
-            <div id="header-background" />
+            <div id="about-header-bkgd" />
 
             <img className="about-portrait about-portrait-media"
                 src={portrait}
@@ -77,7 +77,7 @@ function AboutPage() {
                     <div className="about-li about-li-iconIsRight">
                         <div>
                             I'm graduating from the <span className="about-emphasis">University of Michigan</span> in 2022 with
-                            a <a style={{color: colors["michigan"]}} href="https://cse.engin.umich.edu/" className="about-a">Master's in Computer Science Engineering</a> and an undergraduate
+                            a <a style={{color: colors["michigan"]}} href="https://cse.engin.umich.edu/" className="link-style">Master's in Computer Science Engineering</a> and an undergraduate
                             minor in Physics.
                         </div>
                         <img src={blockMIcon} alt="block M icon" />
@@ -87,16 +87,16 @@ function AboutPage() {
                     <div className="about-li about-li-iconIsLeft">
                         <img src={htmlTagIcon} alt="html tag icon" />
                         <div>
-                            I plan to explore as many topics within Computer Science as I can. So far, my <NavLink style={{color: colors["cs"]}} to="/projects" className="about-a">projects</NavLink>{" "}
+                            I plan to explore as many topics within Computer Science as I can. So far, my <NavLink style={{color: colors["cs"]}} to="/projects" className="link-style">projects</NavLink>{" "}
                             have focused on <span className="about-emphasis">embedded systems</span> and <span className="about-emphasis">real-time programming</span>, and I'm dabbling in
-                            web development <span>(check <a style={{color: colors["cs"]}} href="/" className="about-a">this cool website</a> out!).</span>
+                            web development <span>(check <a style={{color: colors["cs"]}} href="/" className="link-style">this cool website</a> out!).</span>
                         </div>
                     </div>
                 </div>
                 <div className="about-li-container about-li-container-media">
                     <div className="about-li about-li-iconIsRight">
                         <div>
-                            I'm also passionate about <NavLink style={{color: colors["film"]}} to="/films" className="about-a">filmmaking</NavLink> and enjoy every step of the production
+                            I'm also passionate about <NavLink style={{color: colors["film"]}} to="/films" className="link-style">filmmaking</NavLink> and enjoy every step of the production
                             process. My experiences have focused on <span className="about-emphasis">directing</span>, <span className="about-emphasis">producing</span>, <span className="about-emphasis">editing</span>,
                             and <span className="about-emphasis">audio recording</span>.
                         </div>
@@ -107,9 +107,9 @@ function AboutPage() {
                     <div className="about-li about-li-iconIsLeft">
                         <img src={workIcon} alt="work icon" />
                         <div>
-                            Last summer (2019), I completed an internship with <a style={{color: colors["work"]}} href="https://honeybeerobotics.com" className="about-a nowrap">Honeybee Robotics</a> in
+                            Last summer (2019), I completed an internship with <a style={{color: colors["work"]}} href="https://honeybeerobotics.com" className="link-style nowrap">Honeybee Robotics</a> in
                             Pasadena, CA. This summer (2020), I'll be completing a virtual internship with
-                            the <a style={{color: colors["work"]}} href="https://www.microsoft.com/en-us/garage/" className="about-a nowrap">Microsoft Garage</a>.
+                            the <a style={{color: colors["work"]}} href="https://www.microsoft.com/en-us/garage/" className="link-style nowrap">Microsoft Garage</a>.
                         </div>
                     </div>
                 </div>
@@ -118,9 +118,9 @@ function AboutPage() {
                 <div className="about-li-container about-li-container-media">
                     <br/>
                     <div id="resume-line">
-                        For more information: if you prefer crowded text on a white background, check out my <NavLink to="/resume" className="about-a">resumé</NavLink>,
+                        For more information: if you prefer crowded text on a white background, check out my <NavLink to="/resume" className="link-style">resumé</NavLink>,
                         or just{" "}
-                        <a href="mailto:ben@benmanley.dev" className="about-a nowrap">email me</a>!
+                        <a href="mailto:ben@benmanley.dev" className="link-style nowrap">email me</a>!
                     </div>
                 </div>
 
@@ -131,19 +131,19 @@ function AboutPage() {
                     <ul id="fun-facts-list">
                         <li className="fun-facts-li">
                             I made a{" "}
-                            <a href="https://www.youtube.com/watch?v=LwdD47AoS7w" className="about-a">TEDx talk</a>
+                            <a href="https://www.youtube.com/watch?v=LwdD47AoS7w" className="link-style">TEDx talk</a>
                             {" "}in 10th grade
                         </li>
                         <li className="fun-facts-li">I've studied abroad in Hong Kong</li>
                         <li className="fun-facts-li">
                             I'm a Graphic Designer for UMich's satirical newspaper,{" "}
-                            <a href="https://everythreeweekly.com/" className="about-a" style={{fontStyle: "italic"}}>
+                            <a href="https://everythreeweekly.com/" className="link-style" style={{fontStyle: "italic"}}>
                                 The Every Three Weekly
                             </a>
                         </li>
                         <li className="fun-facts-li">
                             I was the photographer for the album cover of a{" "}
-                            <a href="http://www.nestortorres.com/8-music/4-nestor-torres-jazz-flute-traditions" className="about-a">
+                            <a href="http://www.nestortorres.com/8-music/4-nestor-torres-jazz-flute-traditions" className="link-style">
                                 Latin-Grammy-nominated Jazz album
                             </a>
                         </li>

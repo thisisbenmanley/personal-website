@@ -1,0 +1,39 @@
+
+@keyframes films-page-entrance {
+    to {opacity: 1}
+}
+.films-page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    opacity: 0;
+    /* animation-name is applied on image load */
+    animation-name: films-page-entrance;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+
+#films-header-bkgd {
+    position: fixed;
+    height: 15%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(
+        to bottom, rgb(25,25,25), transparent
+    );
+    z-index: 1;
+}
+
+
+#filmspage-title {
+    position: relative;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 20px;
+}

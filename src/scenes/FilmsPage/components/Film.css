@@ -1,0 +1,91 @@
+
+.film-main {
+    position: relative;
+    height: 500px;
+    width: 100vw;
+    /* padding-bottom: 30px; */
+    z-index: 0;
+}
+
+
+.film-still {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: 1;
+
+    object-fit: cover;
+    /* object-position: 0% 0; */
+    transition-duration: 0.5s;
+}
+/* .film-main:hover .film-still {
+    width: 105%;
+} */
+
+
+.film-title {
+    position: absolute;
+    /* width: 97%; */
+    top: 3%;
+    left: 2%;
+    font-size: 40px;
+    font-family: 'Jost';
+    font-style: italic;
+    /* padding-left: 20px; */
+}
+
+
+.film-inner {
+    position: absolute;
+    height: 90%;
+    top: 13%;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.film-poster {
+    height: 300px;
+    flex-basis: auto;
+    flex-shrink: 2;
+}
+
+
+.film-info {
+    font-size: 20px;
+    margin: 20px;
+    flex-basis: 40%;
+
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.film-info th {
+    text-align: end;
+    /* width: 30%; */
+    padding-right: 15px;
+}
+
+
+.film-description {
+    font-style: italic;
+}
+
+
+.film-embed {
+    height: 300px;
+    width: calc(300px * 16 / 9);
+}
