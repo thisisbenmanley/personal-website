@@ -50,10 +50,13 @@ function Film(props) {
     });
 
     let blurCalc = (percentPastFilm >= 27 && percentPastFilm <= 73) ? "none" : "blur(4px)";
+    let opacityCalc = (percentPastFilm >= 27 && percentPastFilm <= 73) ? "1" : "0.65";
 
     return(
         <div ref={(el) => {filmElement = el}} className="film-main"
-            style={{ filter: blurCalc, visibility: props.loading ? "hidden" : "visible" }}>
+            style={{ filter: blurCalc, opacity: opacityCalc,
+                     visibility: props.loading ? "hidden" : "visible",
+                   }}>
             <img onLoad={props.imgLoaded} src={props.stillSrc} className="film-still" 
                 alt={"'" + props.title + "' Film Still"}/>
             <div className="film-inner">

@@ -2,7 +2,7 @@ import React from 'react';
 
 import pdf from './Ben_Manley_Resume.pdf';
 import './ResumePage.css';
-import '../../components/Header.css'
+import '../../common.css';
 
 function ResumePage() {
     return (

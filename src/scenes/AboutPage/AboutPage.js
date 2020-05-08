@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import {FaLinkedinIn, FaGithub, FaStackOverflow} from 'react-icons/fa';
+import {FaLinkedinIn, FaGithub, FaStackOverflow, FaEnvelope} from 'react-icons/fa';
 
 import portrait from './Ben_Manley_Portrait.png';
 import palmIcon from './palm-icon.png';
@@ -67,6 +67,9 @@ function AboutPage() {
                             </a>
                             <a className="about-button" href="https://stackoverflow.com/users/11910197/thisisbenmanley?tab=profile">
                                 <FaStackOverflow style={{color: "#F48024"}} className="logo-svg" />
+                            </a>
+                            <a className="about-button" href="mailto:ben@benmanley.dev">
+                                <FaEnvelope style={{color: "white"}} className="logo-svg" />
                             </a>
                         </div>
                     </div>
