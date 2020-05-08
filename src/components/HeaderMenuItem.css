@@ -54,16 +54,3 @@
         padding-bottom: 3px;
     }
 }
-
-
-/* Bottom border transition to red on-active */
-@keyframes menu-item-active-anim {
-    to {border-bottom-color: red}
-}
-.menu-item-active {
-    animation-name: menu-item-active-anim;
-    animation-duration: 0.4s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-    border-bottom-color: white;
-}

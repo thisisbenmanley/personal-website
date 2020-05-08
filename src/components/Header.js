@@ -19,19 +19,27 @@ function Header() {
     let burgerMenuClasses = menuOpen ? "burger-menu-icon burger-open" : "burger-menu-icon";
     let headerRightClasses = menuOpen ? "header-right header-open" : "header-right";
 
+    const colors = {
+        // "miami": "#6fb61b",
+        "michigan": "#ffcb05",
+        "cs": "#8392ff",
+        "film": "#ff4800",
+        "work": "#68e85f"
+    }
+
     return(
         <>
-        <NavLink to="/about" className="my-name">Ben Manley</NavLink>
+        <NavLink to="/" className="my-name">Ben Manley</NavLink>
         <div className="burger-menu-icon-container">
             <FaBars onClick={clickedBurger} className={burgerMenuClasses} />
         </div>
         
         <div onClick={clickedHeaderRight} className={headerRightClasses}>
             <div className="header-right-spacer" />
-            <HeaderMenuItem link="/about" text="About" order={1} />
-            <HeaderMenuItem link="/projects" text="Tech Projects" order={2} />
-            <HeaderMenuItem link="/films" text="Films" order={3} />
-            <HeaderMenuItem link="/resume" text="Resumé" order={4} />
+            <HeaderMenuItem color={colors["michigan"]} link="/" text="About" order={1} />
+            <HeaderMenuItem color={colors["cs"]} link="/projects" text="Tech Projects" order={2} />
+            <HeaderMenuItem color={colors["film"]} link="/films" text="Films" order={3} />
+            <HeaderMenuItem color={colors["work"]} link="/resume" text="Resumé" order={4} />
 
             <a id="first-header-icon" className="header-icon" href="https://www.linkedin.com/in/benjamin-manley/">
                 <FaLinkedinIn style={{color: "#0077B5"}} className="" />

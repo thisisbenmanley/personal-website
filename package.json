@@ -1,5 +1,5 @@
 {
-  "homepage": "https://thisisbenmanley.github.io/personal-website",
+  "homepage": "https://benmanley.dev",
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
@@ -14,7 +14,7 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo 'benmanley.dev' > ./build/CNAME",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",

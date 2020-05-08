@@ -8,7 +8,6 @@ import {
 import * as serviceWorker from './serviceWorker';
 
 import Header from './components/Header';
-import HomePage from './scenes/HomePage/HomePage';
 import AboutPage from './scenes/AboutPage/AboutPage';
 import TechProjectsPage from './scenes/TechProjectsPage/TechProjectsPage';
 import FilmsPage from './scenes/FilmsPage/FilmsPage';
@@ -24,8 +23,7 @@ ReactDOM.render(
       <div id="index-div">
         <Header />
         <Switch>
-          <Route exact path="/" component={HomePage}/>
-          <Route path="/about" component={AboutPage}/>
+          <Route exact path="/" component={AboutPage}/>
           <Route path="/projects" component={TechProjectsPage}/>
           <Route path="/films" component={FilmsPage}/>
           <Route path="/resume" component={ResumePage}/>
