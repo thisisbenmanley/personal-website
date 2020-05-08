@@ -12,13 +12,13 @@ import AboutPage from './scenes/AboutPage/AboutPage';
 import TechProjectsPage from './scenes/TechProjectsPage/TechProjectsPage';
 import FilmsPage from './scenes/FilmsPage/FilmsPage';
 import ResumePage from './scenes/ResumePage/ResumePage';
-import NoPage from './scenes/NoPage/NoPage';
+import FourOhFourPage from './scenes/404Page/404Page'; // can't start with numbers :)
 
 import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename={`${process.env.PUBLIC_URL}/`}>
       <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet"/>
       <div id="index-div">
         <Header />
@@ -27,7 +27,7 @@ ReactDOM.render(
           <Route path="/projects" component={TechProjectsPage}/>
           <Route path="/films" component={FilmsPage}/>
           <Route path="/resume" component={ResumePage}/>
-          <Route path="*" component={NoPage}/>
+          <Route path="*" component={FourOhFourPage}/>
         </Switch>
       </div>
     </Router>

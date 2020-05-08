@@ -1,0 +1,27 @@
+
+#fourohfour-bkgd {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* height: 100vh; */
+    width: 100vw;
+    text-align: center;
+    font-size: 56vw;
+    line-height: 50vw;
+
+    font-family: 'Jost';
+    font-weight: bold;
+    color: rgb(40,40,40);
+}
+
+
+#fourohfour-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    text-align: center;
+    font-size: 30px;
+}
