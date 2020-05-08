@@ -13,13 +13,11 @@ function Header() {
     }
 
     let burgerMenuClasses = menuOpen ? "burger-menu-icon burger-open" : "burger-menu-icon";
-    let headerRightClasses = menuOpen ?
-        "header-right header-right-media header-open" :
-        "header-right header-right-media";
+    let headerRightClasses = menuOpen ? "header-right header-open" : "header-right";
 
     return(
         <>
-        <NavLink to="/about" className="my-name my-name-media">Ben Manley</NavLink>
+        <NavLink to="/about" className="my-name">Ben Manley</NavLink>
         <div className="burger-menu-icon-container">
             <FaBars onClick={clickedMenu} className={burgerMenuClasses} />
         </div>

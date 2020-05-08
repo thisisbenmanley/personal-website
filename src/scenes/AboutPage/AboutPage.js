@@ -36,12 +36,12 @@ function AboutPage() {
     }
 
     return (
-        <div className="about-page about-page-media"
+        <div className="about-page"
             style={loading ? {} : {animationName: "about-page-entrance"}}>
 
             <div id="about-header-bkgd" />
 
-            <img className="about-portrait about-portrait-media"
+            <img className="about-portrait"
                 src={portrait}
                 alt="Ben Manley Portrait"
                 onLoad={imgLoaded}
@@ -52,7 +52,7 @@ function AboutPage() {
                     <div className="header-spacer"/>
                 </div>
 
-                <div className="about-top about-top-media">
+                <div className="about-top">
                     <div id="about-hello">
                         <i>Hello there!</i><br/>I'm Ben Manley.
                     </div>
@@ -73,7 +73,7 @@ function AboutPage() {
                 </div>
 
                 {/* Big About-List Section */}
-                <div className="about-li-container about-li-container-media">
+                <div className="about-li-container">
                     <div className="about-li about-li-iconIsLeft">
                         <img src={palmIcon} alt="palm tree icon" />
                         <div>
@@ -81,7 +81,7 @@ function AboutPage() {
                         </div>
                     </div>
                 </div>
-                <div className="about-li-container about-li-container-media">
+                <div className="about-li-container">
                     <div className="about-li about-li-iconIsRight">
                         <div>
                             I'm graduating from the <span className="about-emphasis">University of Michigan</span> in 2022 with
@@ -91,7 +91,7 @@ function AboutPage() {
                         <img src={blockMIcon} alt="block M icon" />
                     </div>
                 </div>
-                <div className="about-li-container about-li-container-media">
+                <div className="about-li-container">
                     <div className="about-li about-li-iconIsLeft">
                         <img src={htmlTagIcon} alt="html tag icon" />
                         <div>
@@ -101,7 +101,7 @@ function AboutPage() {
                         </div>
                     </div>
                 </div>
-                <div className="about-li-container about-li-container-media">
+                <div className="about-li-container">
                     <div className="about-li about-li-iconIsRight">
                         <div>
                             I'm also passionate about <NavLink style={{color: colors["film"]}} to="/films" className="link-style">filmmaking</NavLink> and enjoy every step of the production
@@ -111,7 +111,7 @@ function AboutPage() {
                         <img src={filmIcon} alt="film icon" />
                     </div>
                 </div>
-                <div className="about-li-container about-li-container-media">
+                <div className="about-li-container">
                     <div className="about-li about-li-iconIsLeft">
                         <img src={workIcon} alt="work icon" />
                         <div>
@@ -123,7 +123,7 @@ function AboutPage() {
                 </div>
 
                 {/* Resume Line */}
-                <div className="about-li-container about-li-container-media">
+                <div className="about-li-container">
                     <br/>
                     <div id="resume-line">
                         For more information: if you prefer crowded text on a white background, check out my <NavLink to="/resume" className="link-style">resumé</NavLink>,
@@ -133,7 +133,7 @@ function AboutPage() {
                 </div>
 
                 {/* Fun Facts Section */}
-                <div className="about-li-container about-li-container-media">
+                <div className="about-li-container">
                     <br/>
                     <div id="fun-facts">Fun Facts</div>
                     <ul id="fun-facts-list">

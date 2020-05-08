@@ -19,14 +19,14 @@
     animation-duration: 1.2s;
 }
 @media (min-width: 580px) {
-    .my-name-media {
+    .my-name {
         font-size: 35px;
         white-space: nowrap;
         line-height: 100%;
     }
 }
 @media (max-width: 579px) {
-    .my-name-media {
+    .my-name {
         font-size: 25px;
         white-space: wrap;
         width: 10%;
@@ -48,7 +48,7 @@
     z-index: 2;
 }
 @media (min-width: 500px) {
-    .header-right-media {
+    .header-right {
         height: 18vh;
         width: 100%;
         margin-right: 20px;
@@ -61,7 +61,7 @@
     }
 }
 @media (max-width: 499px) {
-    .header-right-media {
+    .header-right {
         height: 25vh;
         padding-right: 5%;
         padding-left: 20%;

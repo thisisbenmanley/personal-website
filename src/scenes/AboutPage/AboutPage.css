@@ -16,7 +16,7 @@
     animation-fill-mode: forwards;
 }
 @media (min-width: 800px) {
-    .about-page-media {
+    .about-page {
         display: inline-flex;
         flex-wrap: nowrap;
         flex-direction: row;
@@ -49,7 +49,7 @@
     z-index: 2;
 }
 @media (min-width: 800px) {
-    .about-portrait-media {
+    .about-portrait {
         position: sticky;
         height: 100vh;
         flex-shrink: 10;
@@ -57,7 +57,7 @@
     }
 }
 @media (max-width: 799px) {
-    .about-portrait-media {
+    .about-portrait {
         position: relative;
         height: 50vh;
         width: 100%;
@@ -99,12 +99,12 @@
     align-items: center;
 }
 @media (min-width: 800px) {
-    .about-top-media {
+    .about-top {
         width: 86%;
     }
 }
 @media (max-width: 799px) {
-    .about-top-media {
+    .about-top {
         width: 100%;
     }
 }
@@ -157,12 +157,12 @@
     font-size: 20px;
 }
 @media (min-width: 800px) {
-    .about-li-container-media {
+    .about-li-container {
         width: 70%;
     }
 }
 @media (max-width: 799px) {
-    .about-li-container-media {
+    .about-li-container {
         max-width: 90%;
     }
 }
