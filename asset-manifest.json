@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.21bc875e.chunk.css",
-    "main.js": "/static/js/main.d2e86a44.chunk.js",
-    "main.js.map": "/static/js/main.d2e86a44.chunk.js.map",
+    "main.css": "/static/css/main.0c77056a.chunk.css",
+    "main.js": "/static/js/main.ebcb3f2d.chunk.js",
+    "main.js.map": "/static/js/main.ebcb3f2d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d7d89e4f.js",
     "runtime-main.js.map": "/static/js/runtime-main.d7d89e4f.js.map",
-    "static/js/2.fb0d1a39.chunk.js": "/static/js/2.fb0d1a39.chunk.js",
-    "static/js/2.fb0d1a39.chunk.js.map": "/static/js/2.fb0d1a39.chunk.js.map",
+    "static/js/2.08983118.chunk.js": "/static/js/2.08983118.chunk.js",
+    "static/js/2.08983118.chunk.js.map": "/static/js/2.08983118.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5571aa37647f016fba9d42272d536474.js": "/precache-manifest.5571aa37647f016fba9d42272d536474.js",
+    "precache-manifest.378e70f5ac4c5fb23e93f462796dd493.js": "/precache-manifest.378e70f5ac4c5fb23e93f462796dd493.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.21bc875e.chunk.css.map": "/static/css/main.21bc875e.chunk.css.map",
-    "static/js/2.fb0d1a39.chunk.js.LICENSE.txt": "/static/js/2.fb0d1a39.chunk.js.LICENSE.txt",
+    "static/css/main.0c77056a.chunk.css.map": "/static/css/main.0c77056a.chunk.css.map",
+    "static/js/2.08983118.chunk.js.LICENSE.txt": "/static/js/2.08983118.chunk.js.LICENSE.txt",
     "static/media/Ben_Manley_Portrait.png": "/static/media/Ben_Manley_Portrait.055d4588.png",
     "static/media/Ben_Manley_Resume.pdf": "/static/media/Ben_Manley_Resume.f523f13f.pdf",
+    "static/media/EarPeaceLogo.png": "/static/media/EarPeaceLogo.a6ad04ec.png",
     "static/media/MWBPoster.jpg": "/static/media/MWBPoster.a28be619.jpg",
     "static/media/MWBStill.jpg": "/static/media/MWBStill.fdddb72a.jpg",
     "static/media/RememberPoster.jpg": "/static/media/RememberPoster.eb4babd6.jpg",
@@ -24,14 +25,14 @@
     "static/media/ViewPointStill.jpg": "/static/media/ViewPointStill.8579ce94.jpg",
     "static/media/blockm-icon.png": "/static/media/blockm-icon.91a2534d.png",
     "static/media/film-icon.png": "/static/media/film-icon.ff65f869.png",
-    "static/media/html-tag-icon.png": "/static/media/html-tag-icon.5903fb3a.png",
+    "static/media/html-tag-icon.png": "/static/media/html-tag-icon.5108dfda.png",
     "static/media/palm-icon.png": "/static/media/palm-icon.88086cd4.png",
     "static/media/work-icon.png": "/static/media/work-icon.e72b2029.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d7d89e4f.js",
-    "static/js/2.fb0d1a39.chunk.js",
-    "static/css/main.21bc875e.chunk.css",
-    "static/js/main.d2e86a44.chunk.js"
+    "static/js/2.08983118.chunk.js",
+    "static/css/main.0c77056a.chunk.css",
+    "static/js/main.ebcb3f2d.chunk.js"
   ]
 }

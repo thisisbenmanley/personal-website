@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "854d75cc155b8d930e2612e2e00faefa",
+    "revision": "33f504d70d67f85cee4c82db631d7865",
     "url": "/index.html"
   },
   {
-    "revision": "dfb78c088e0264ec234a",
-    "url": "/static/css/main.21bc875e.chunk.css"
+    "revision": "9772d0392e336d231efc",
+    "url": "/static/css/main.0c77056a.chunk.css"
   },
   {
-    "revision": "7f07c4c6eab49735a75f",
-    "url": "/static/js/2.fb0d1a39.chunk.js"
+    "revision": "9dc527bc61d13eca743e",
+    "url": "/static/js/2.08983118.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/static/js/2.fb0d1a39.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.08983118.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dfb78c088e0264ec234a",
-    "url": "/static/js/main.d2e86a44.chunk.js"
+    "revision": "9772d0392e336d231efc",
+    "url": "/static/js/main.ebcb3f2d.chunk.js"
   },
   {
     "revision": "7340797c3d775c8495e4",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f523f13f9b4341053272023dfdbab148",
     "url": "/static/media/Ben_Manley_Resume.f523f13f.pdf"
+  },
+  {
+    "revision": "a6ad04ec90626e88ee451cd5b08bf1ae",
+    "url": "/static/media/EarPeaceLogo.a6ad04ec.png"
   },
   {
     "revision": "a28be6195fe36dd0b58d7f73a03a4da5",
@@ -72,8 +76,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/film-icon.ff65f869.png"
   },
   {
-    "revision": "5903fb3a84ac1d9f0b04d6e43f3a0c3a",
-    "url": "/static/media/html-tag-icon.5903fb3a.png"
+    "revision": "5108dfda09de2d25ef4d1646c9d42bc8",
+    "url": "/static/media/html-tag-icon.5108dfda.png"
   },
   {
     "revision": "88086cd42831db0ae9c9f3f5aba8cba6",
