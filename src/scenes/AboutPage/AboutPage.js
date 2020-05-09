@@ -8,6 +8,7 @@ import blockMIcon from './blockm-icon.png';
 import htmlTagIcon from './html-tag-icon.png';
 import filmIcon from './film-icon.png';
 import workIcon from './work-icon.png';
+import EarPeaceLogo from './EarPeaceLogo.png';
 import './AboutPage.css';
 import '../../common.css'
 
@@ -28,11 +29,11 @@ function AboutPage() {
     });
 
     const colors = {
-        "miami": "#6fb61b",
         "michigan": "#ffcb05",
-        "cs": "#8392ff",
+        "cs": "#ac83ff",
         "film": "#ff4800",
-        "work": "#68e85f"
+        "work": "#68e85f",
+        "earpeace": "#369cda"
     }
 
     return (
@@ -122,6 +123,16 @@ function AboutPage() {
                             Pasadena, CA. This summer (2020), I'll be completing a virtual internship with
                             the <a style={{color: colors["work"]}} href="https://www.microsoft.com/en-us/garage/" className="link-style nowrap">Microsoft Garage</a>.
                         </div>
+                    </div>
+                </div>
+                <div className="about-li-container">
+                    <div className="about-li about-li-iconIsRight">
+                        <div>
+                            In my spare time, I'm an Ambassador and Board Member of the{" "}
+                            <a style={{color: colors["earpeace"]}} href="http://www.earpeacefoundation.org/" className="link-style">Ear Peace: Save Your Hearing Foundation</a>.
+                            Protect your ears!
+                        </div>
+                        <img src={EarPeaceLogo} alt="EarPeace logo" />
                     </div>
                 </div>
 

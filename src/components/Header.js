@@ -22,7 +22,7 @@ function Header() {
     const colors = {
         // "miami": "#6fb61b",
         "michigan": "#ffcb05",
-        "cs": "#8392ff",
+        "cs": "#ac83ff",
         "film": "#ff4800",
         "work": "#68e85f"
     }
