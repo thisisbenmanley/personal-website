@@ -31,9 +31,6 @@ function FilmsPage() {
         <div className="films-page" style={loading ? {} : {animationName: "films-page-entrance"}}>
             <div className="header-spacer" />
             <div id="filmspage-title">Filmography</div>
-            <div id="filmspage-instructions">
-                Click a film's title to <span style={{whiteSpace: "nowrap"}}>view the film.</span>
-            </div>
 
             <Film
                 loading={loading} imgLoaded={imgLoaded}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaPlayCircle } from 'react-icons/fa';
 
 import './Film.css';
 import '../../../common.css'
@@ -61,13 +62,17 @@ function Film(props) {
                 alt={"'" + props.title + "' Film Still"}/>
             <div className="film-inner">
                 <div className="film-info">
-                    <a href={props.videoLink} className="film-title">{props.title}</a>
+                    <div className="film-title">{props.title}</div>
                     <div className="film-roles">{props.roles}</div>
                     <div className="film-awards">{props.awards}</div>
                     <br/>
                     <div className="film-description">{props.description}</div>
                 </div>
             </div>
+            <a href={props.videoLink} className="film-play">
+                <span style={{paddingRight: "10px"}}>Click to<br/>watch</span>
+                <FaPlayCircle style={{fontSize: "50px"}} />
+            </a>
             <div className="film-dirprod">
                 Directed by {props.director}<br/>
                 Produced by {props.producedBy}

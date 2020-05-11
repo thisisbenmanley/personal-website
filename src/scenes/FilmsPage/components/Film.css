@@ -75,13 +75,6 @@
     font-weight: normal;
     margin-bottom: 10px;
     z-index: 2;
-
-    color: white;
-    text-decoration: none;
-    transition-duration: 0.3s;
-}
-.film-title:hover {
-    opacity: 0.5;
 }
 
 
@@ -99,6 +92,27 @@
 
 .film-description {
     font-style: italic;
+}
+
+
+.film-play {
+    position: absolute;
+    font-size: 20px;
+    right: 10px;
+    top: 10px;
+    text-align: end;
+    line-height: 100%;
+    z-index: 2;
+
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.3s;
+
+    display: inline-flex;
+    align-items: center;
+}
+.film-play:hover {
+    opacity: 0.6;
 }
 
 
