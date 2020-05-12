@@ -29,7 +29,23 @@ function Header() {
 
     return(
         <>
-        <NavLink to="/" className="my-name">Ben Manley</NavLink>
+        <div className="header-left">
+            <NavLink to="/" className="my-name">Ben Manley</NavLink>
+            <br id="header-left-br"/>
+            <a id="first-header-icon-left" className="header-icon-left" href="https://www.linkedin.com/in/benjamin-manley/">
+                    <FaLinkedinIn style={{color: "#0077B5"}} />
+            </a>
+            <a className="header-icon-left" href="https://github.com/thisisbenmanley">
+                <FaGithub style={{color: "white"}} />
+            </a>
+            <a className="header-icon-left" href="https://stackoverflow.com/users/11910197/thisisbenmanley?tab=profile">
+                <FaStackOverflow style={{color: "#F48024"}} />
+            </a>
+            <a className="header-icon-left" href="mailto:ben@benmanley.dev">
+                <FaEnvelope style={{color: "white"}} />
+            </a>
+        </div>
+
         <div className="burger-menu-icon-container">
             <FaBars onClick={clickedBurger} className={burgerMenuClasses} />
         </div>
@@ -41,17 +57,17 @@ function Header() {
             <HeaderMenuItem color={colors["film"]} link="/films" text="Films" order={3} />
             <HeaderMenuItem color={colors["work"]} link="/resume" text="Resumé" order={4} />
 
-            <a id="first-header-icon" className="header-icon" href="https://www.linkedin.com/in/benjamin-manley/">
-                <FaLinkedinIn style={{color: "#0077B5"}} className="" />
+            <a id="first-header-icon-mobile" className="header-icon-mobile" href="https://www.linkedin.com/in/benjamin-manley/">
+                <FaLinkedinIn style={{color: "#0077B5"}} />
             </a>
-            <a className="header-icon" href="https://github.com/thisisbenmanley">
-                <FaGithub style={{color: "white"}} className="" />
+            <a className="header-icon-mobile" href="https://github.com/thisisbenmanley">
+                <FaGithub style={{color: "white"}} />
             </a>
-            <a className="header-icon" href="https://stackoverflow.com/users/11910197/thisisbenmanley?tab=profile">
-                <FaStackOverflow style={{color: "#F48024"}} className="" />
+            <a className="header-icon-mobile" href="https://stackoverflow.com/users/11910197/thisisbenmanley?tab=profile">
+                <FaStackOverflow style={{color: "#F48024"}} />
             </a>
-            <a className="header-icon" href="mailto:ben@benmanley.dev">
-                <FaEnvelope style={{color: "white"}} className="" />
+            <a className="header-icon-mobile" href="mailto:ben@benmanley.dev">
+                <FaEnvelope style={{color: "white"}} />
             </a>
         </div>
         </>

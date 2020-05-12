@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaPlayCircle } from 'react-icons/fa';
 
 import './Film.css';
-import '../../../common.css'
+import '../../../common.css';
 
 function Film(props) {
 
@@ -69,9 +69,10 @@ function Film(props) {
                     <div className="film-description">{props.description}</div>
                 </div>
             </div>
-            <a href={props.videoLink} className="film-play">
+            <a href={props.videoLink} className="film-play"
+                    style={props.loading ? {} : {animationName: "shrink-play-button"}}>
                 <span style={{paddingRight: "10px"}}>Click to<br/>watch</span>
-                <FaPlayCircle style={{fontSize: "50px"}} />
+                <FaPlayCircle style={{fontSize: "250%"}} />
             </a>
             <div className="film-dirprod">
                 Directed by {props.director}<br/>

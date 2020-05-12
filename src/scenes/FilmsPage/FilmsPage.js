@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
 
-import RememberPoster from './RememberPoster.jpg';
 import RememberStill from './RememberStill.jpg';
-import ViewPointPoster from './ViewPointPoster.jpg';
 import ViewPointStill from './ViewPointStill.jpg';
-import MWBPoster from './MWBPoster.jpg';
 import MWBStill from './MWBStill.jpg';
-import SocksPoster from './SocksPoster.jpg';
 import SocksStill from './SocksStill.jpg';
 
 import Film from './components/Film';
@@ -30,11 +26,11 @@ function FilmsPage() {
         <div id="films-header-bkgd" />
         <div className="films-page" style={loading ? {} : {animationName: "films-page-entrance"}}>
             <div className="header-spacer" />
-            <div id="filmspage-title">Filmography</div>
+            <div id="filmspage-title">Here's what I've filmed.</div>
 
             <Film
                 loading={loading} imgLoaded={imgLoaded}
-                stillSrc={RememberStill} posterSrc={RememberPoster}
+                stillSrc={RememberStill}
                 title="Remember."
                 director="Jake Feeman"
                 roles="Associate Producer, Editor"
@@ -49,7 +45,7 @@ function FilmsPage() {
 
             <Film
                 loading={loading}
-                stillSrc={MWBStill} posterSrc={MWBPoster}
+                stillSrc={MWBStill}
                 title="Most Welcome Breezes: The Story of Marion Manley"
                 director="Ben and Marissa Manley"
                 roles="Director, Cinematographer, Editor, Writer, Narrator"
@@ -69,7 +65,7 @@ function FilmsPage() {
 
             <Film
                 loading={loading}
-                stillSrc={ViewPointStill} posterSrc={ViewPointPoster}
+                stillSrc={ViewPointStill}
                 title="View.Point"
                 director="Dylan Lange"
                 roles="Head of Sound / Sound Recordist"
@@ -86,7 +82,7 @@ function FilmsPage() {
 
             <Film
                 loading={loading}
-                stillSrc={SocksStill} posterSrc={SocksPoster}
+                stillSrc={SocksStill}
                 title="Socks!"
                 director="Andrew Howell"
                 roles="Head of Sound / Sound Recordist"

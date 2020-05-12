@@ -2,6 +2,7 @@
 .film-main {
     position: relative;
     width: 100%;
+    text-shadow: 0 0 20px black;
     z-index: 0;
     transition-duration: 0.5s;
 }
@@ -52,9 +53,6 @@
     justify-content: space-around;
     align-items: flex-start;
 }
-.film-info th {
-    padding-right: 25px;
-}
 @media (min-width: 500px) {
     .film-info {
         font-size: 20px;
@@ -95,18 +93,26 @@
 }
 
 
+@keyframes shrink-play-button {
+    from {font-size: 50px; line-height: 50px;}
+    to {font-size: 20px; line-height: 20px}
+}
 .film-play {
     position: absolute;
-    font-size: 20px;
-    right: 10px;
-    top: 10px;
+    right: 20px;
+    top: 20px;
     text-align: end;
-    line-height: 100%;
     z-index: 2;
 
     color: white;
     text-decoration: none;
     transition-duration: 0.3s;
+
+    /* animation-name applied on load */
+    /* animation-name: shrink-play-button; */
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
 
     display: inline-flex;
     align-items: center;
@@ -114,12 +120,15 @@
 .film-play:hover {
     opacity: 0.6;
 }
+.film-play:focus {
+    color: cyan;
+}
 
 
 .film-dirprod {
     position: absolute;
-    right: 10px;
-    bottom: 10px;
+    right: 20px;
+    bottom: 20px;
     z-index: 2;
     text-align: right;
 }

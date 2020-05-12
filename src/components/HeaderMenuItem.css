@@ -2,7 +2,7 @@
 /* Container for item in menu */
 @keyframes first-menu-animation {
     from {top: 150%}
-    to {top: 20%}
+    to {top: 25%}
     30% {opacity: 0}
     100% {opacity: 1}
 }

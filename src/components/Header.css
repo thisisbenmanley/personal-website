@@ -6,12 +6,20 @@
 }
 
 
-/* Ben Manley on left side of header */
-.my-name {
+.header-left {
     position: fixed;
     margin: 10px;
+    filter: drop-shadow(0 0 20px black);
     z-index: 4;
-    
+}
+@media (min-width: 800px) {
+    .header-left {
+        top: 8px;
+    }
+}
+
+
+.my-name {    
     color: #ffc1cc;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
@@ -35,12 +43,50 @@
 }
 
 
+@media (min-width: 800px) {
+    #header-left-br {
+        display: none;
+    }
+}
+
+
+.header-icon-left {
+    position: relative;
+    font-size: 24px;
+    transition-duration: 0.4s;
+    top: 2px;
+}
+.header-icon-left:hover {
+    opacity: 0.6;
+    top: -1px;
+}
+@media (max-width: 499px) {
+    .header-icon-left {
+        display: none;
+    }
+}
+@media (max-width: 799px) {
+    .header-icon-left {
+        margin-right: 8px;
+    }
+}
+@media (min-width: 800px) {
+    .header-icon-left {
+        margin-right: 15px;
+    }
+    #first-header-icon-left {
+        margin-left: 40px;
+    }
+}
+
+
 /* Menu on right side of header */
 .header-right {
     position: fixed;
     top: 0;
     right: 0;
     white-space: nowrap;
+    text-shadow: 0 0 20px black;
     
     display: inline-flex;
     flex-wrap: nowrap;
@@ -49,7 +95,7 @@
 }
 @media (min-width: 500px) {
     .header-right {
-        height: 18vh;
+        height: 12vh;
         width: 100%;
         margin-right: 20px;
 
@@ -125,15 +171,15 @@
 }
 
 
-.header-icon {
+.header-icon-mobile {
     font-size: 30px;
     line-height: 40px;
 }
 @media (min-width: 500px) {
-    .header-icon {
+    .header-icon-mobile {
         display: none;
     }
 }
-#first-header-icon {
+#first-header-icon-mobile {
     margin-top: 25px;
 }
