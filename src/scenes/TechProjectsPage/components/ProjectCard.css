@@ -1,0 +1,129 @@
+
+
+.pcard-main {
+    position: relative;
+    flex-basis: 45%;
+    flex-grow: 1;
+    max-width: 700px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid white;
+    color: white;
+    text-shadow: 0 0 10px black;
+    z-index: 0;
+    transition-duration: 0.4s;
+}
+@media (min-width: 500px) {
+    .pcard-main {
+        height: 500px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 499px) {
+    .pcard-main {
+        height: 400px;
+        flex-grow: 1;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+.pcard-main:hover {
+    color: #ac83ff;
+    border-color: #ac83ff;
+}
+.pcard-main:hover .pcard-bkgd {
+    opacity: 0.5;
+}
+.pcard-main:focus {
+    color: cyan;
+    border-color: cyan;
+}
+
+
+.pcard-bkgd {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 1;
+    object-fit: cover;
+    transition-duration: 0.4s;
+}
+
+
+.pcard-gradient {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+
+    background-image: linear-gradient(
+        to top, rgb(25,25,25), transparent 50%
+    );
+}
+
+
+.pcard-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 3;
+
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+@media (min-width: 500px) {
+    .pcard-info {
+        font-size: 20px;
+    }
+}
+@media (max-width: 499px) {
+    .pcard-info {
+        font-size: 15px;
+    }
+}
+
+
+.pcard-title {
+    font-size: 200%;
+    line-height: 100%;
+    font-family: 'Jost';
+    /* font-style: italic; */
+    font-weight: normal;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+
+.pcard-roles {
+    font-style: italic;
+}
+
+
+/* .pcard-categories {
+    padding-left: 30px;
+    font-style: italic;
+    font-weight: 600;
+} */
+
+
+.pcard-description {
+
+}
+
+
+.pcard-linkicon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 3;
+    font-size: 30px;
+}

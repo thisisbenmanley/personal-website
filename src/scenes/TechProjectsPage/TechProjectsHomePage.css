@@ -1,0 +1,54 @@
+
+@keyframes projects-page-entrance {
+    to {opacity: 1}
+}
+#projects-page {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    opacity: 0;
+    /* animation-name is applied on first film's image load */
+    /* animation-name: projects-page-entrance; */
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    overflow-y: scroll;
+}
+
+
+#projects-header-bkgd {
+    position: fixed;
+    height: 12%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(
+        to bottom, black, transparent
+    );
+    z-index: 1;
+}
+
+
+#projects-title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+@media (min-width: 500px) {
+    #projects-title {
+        margin: 50px 0;
+    }
+}
+@media (max-width: 499px) {
+    #projects-title {
+        margin: 50px 0;
+        margin-top: 0;
+    }
+}
