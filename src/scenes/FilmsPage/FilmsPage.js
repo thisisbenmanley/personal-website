@@ -26,7 +26,7 @@ function FilmsPage() {
         <div id="films-header-bkgd" />
         <div className="films-page" style={loading ? {} : {animationName: "films-page-entrance"}}>
             <div className="header-spacer" />
-            <div id="filmspage-title">Here's what I've filmed.</div>
+            <div id="filmspage-title">Here are some of my films.</div>
 
             <Film
                 loading={loading} imgLoaded={imgLoaded}

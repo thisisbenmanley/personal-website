@@ -1,0 +1,234 @@
+
+#loop-header-bkgd {
+    position: fixed;
+    height: 12%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(
+        to bottom, black, transparent
+    );
+    z-index: 1;
+}
+
+
+.loop-logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    opacity: 0.1;
+}
+
+
+.loop-page {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+@media (min-width: 500px) {
+    .loop-page {
+        font-size: 20px;
+    }
+}
+@media (max-width: 499px) {
+    .loop-page {
+        font-size: 15px;
+    }
+}
+
+
+.loop-top {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    font-weight: 500;
+    background-color: rgb(25,25,25);
+    text-shadow: 0 0 30px black, 0 0 30px black, 0 0 30px black;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.loop-top img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+
+.loop-top-inner {
+    position: relative;
+    width: 100%;
+    margin: auto auto;
+}
+.loop-top-inner-top {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+
+.loop-back-button {
+    position: relative;
+    align-self: center;
+    font-size: 25px;
+    line-height: 100%;
+    flex-basis: 10%;
+    flex-shrink: 1;
+
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.4s;
+
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+.loop-back-button:hover {
+    opacity: 0.6;
+}
+@media (max-width: 699px) {
+    .loop-back-text {
+        display: none;
+    }
+    .loop-back-button {
+        font-size: 30px;
+        padding-left: 10px;
+    }
+    .loop-top-inner-spacer {
+        padding-right: 10px;
+    }
+}
+
+
+.loop-title {
+    position: relative;
+    text-align: center;
+    font-size: 250%;
+    line-height: 100%;
+    font-family: 'Jost';
+    font-weight: normal;
+    margin: 0 30px;
+}
+
+
+.loop-top-inner-spacer {
+    flex-basis: 10%;
+    flex-shrink: 1;
+}
+
+
+.loop-top-text {
+    margin: auto;
+
+    font-style: italic;
+    text-align: center;
+}
+@media (min-width: 500px) {
+    .loop-top-text {
+        width: 60%;
+    }
+}
+@media (max-width: 499px) {
+    .loop-top-text {
+        width: 75%;
+    }
+}
+
+
+.loop-main {
+    position: relative;
+    width: 100%;
+}
+
+
+.loop-li-container {
+    width: 95%;
+}
+@media (min-width: 800px) {
+    .loop-li-container {
+        margin: 150px auto;
+    }
+    .loop-li {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .loop-li-imgIsLeft {
+        justify-content: flex-start;
+    }
+    .loop-li-imgIsRight {
+        justify-content: flex-end;
+        text-align: right;
+    }
+    .loop-li-imgIsLeft .loop-li-imgdiv {
+        padding-right: 30px;
+    }
+    .loop-li-imgIsRight .loop-li-imgdiv {
+        padding-left: 30px;
+    }
+    .loop-li-text {
+        flex-basis: 500px;
+        flex-shrink: 1;
+    }
+    .loop-li-imgdiv {
+        flex-basis: 500px;
+        flex-shrink: 1;
+    }
+}
+@media (max-width: 799px) {
+    .loop-li-container {
+        margin: 100px auto;
+    }
+    .loop-li {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .loop-li .loop-li-imgdiv {
+        padding-bottom: 10px;
+    }
+    .loop-li-imgIsRight {
+        flex-direction: column-reverse;
+    }
+}
+.loop-li img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.loop-main b {
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+.loop-bottom-back {
+    position: relative;
+    width: 100%;
+    font-size: 25px;
+    line-height: 100%;
+    padding-bottom: 50px;
+
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

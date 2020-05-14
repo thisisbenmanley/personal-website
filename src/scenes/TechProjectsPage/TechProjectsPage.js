@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
+import HyperloopPage from './scenes/HyperloopPage/HyperloopPage';
 import FourOhFourPage from '../404Page/404Page';
-// import WWWPage from './scenes/WWWPage/WWWPage';
 
 import HyperloopPic from './Hyperloop.png';
 import RoboSubPic from './RoboSub.jpg';
@@ -18,7 +18,7 @@ function TechProjectsPage(props) {
     return (
         <Switch>
             <Route exact path={props.match.url+"/"} component={TechProjectsHomePage} />
-            {/* <Route path={props.match.url+"/warmer-winter-walks"} component={WWWPage} /> */}
+            <Route path={props.match.url+"/hyperloop"} component={HyperloopPage} />
             <Route path={props.match.url+"/*"} component={FourOhFourPage}/>
         </Switch>
     );
@@ -113,6 +113,7 @@ function TechProjectsHomePage(props) {
                 linkInternal={true}
                 link={props.match.url+"/super-midio-bros"}
                 // https://github.com/eashwar/super-midio-bros#super-midio-bros
+                // https://www.youtube.com/watch?v=cunnLp3Ipi8
             />
         </div>
         </>
