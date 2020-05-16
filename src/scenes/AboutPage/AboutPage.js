@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import {FaLinkedinIn, FaGithub, FaStackOverflow, FaEnvelope} from 'react-icons/fa';
 
-import portrait from './Ben_Manley_Portrait.png';
+import portrait from './Ben_Manley_Portrait.jpg';
 import palmIcon from './palm-icon.png';
 import blockMIcon from './blockm-icon.png';
 import htmlTagIcon from './html-tag-icon.png';
