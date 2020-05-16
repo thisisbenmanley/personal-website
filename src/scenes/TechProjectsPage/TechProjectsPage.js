@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import HyperloopPage from './scenes/HyperloopPage/HyperloopPage';
+import RoboSubPage from './scenes/RoboSubPage/RoboSubPage';
 import FourOhFourPage from '../404Page/404Page';
 
 import HyperloopPic from './Hyperloop.png';
@@ -19,6 +20,7 @@ function TechProjectsPage(props) {
         <Switch>
             <Route exact path={props.match.url+"/"} component={TechProjectsHomePage} />
             <Route path={props.match.url+"/hyperloop"} component={HyperloopPage} />
+            <Route path={props.match.url+"/robosub"} component={RoboSubPage} />
             <Route path={props.match.url+"/*"} component={FourOhFourPage}/>
         </Switch>
     );
@@ -64,7 +66,7 @@ function TechProjectsHomePage(props) {
                 bkgdSrc={RoboSubPic}
                 title="Michigan Robotic Submarine"
                 categories="Embedded Systems, Real-Time Programming, Management"
-                roles="Software Lead"
+                roles="Co-Founder, Software Lead"
                 description={<>
                     The control/navigation software for an autonomous underwater
                     vehicle competing in RoboNation's RoboSub Competition.
@@ -110,8 +112,8 @@ function TechProjectsHomePage(props) {
                     A controller for Super Mario Bros Level 1-1 using a MIDI Keyboard.
                     Made for MHacks 11.
                 </>}
-                linkInternal={true}
-                link={props.match.url+"/super-midio-bros"}
+                linkInternal={false}
+                link="https://devpost.com/software/super-midio-bros-pno9rv"
                 // https://github.com/eashwar/super-midio-bros#super-midio-bros
                 // https://www.youtube.com/watch?v=cunnLp3Ipi8
             />
@@ -119,9 +121,3 @@ function TechProjectsHomePage(props) {
         </>
     );
 }
-
-// Michigan Hyperloop
-// Michigan Robotic Submarine
-// Warmer Winter Walks
-// This Website
-// Super MIDIo Bros

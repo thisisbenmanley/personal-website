@@ -1,5 +1,5 @@
 
-#loop-header-bkgd {
+#projtemp-header-bkgd {
     position: fixed;
     height: 12%;
     width: 100%;
@@ -13,35 +13,55 @@
 }
 
 
-.loop-logo {
+@keyframes projtemp-logo-entrance {
+    to {opacity: 0.1}
+}
+.projtemp-logo {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    opacity: 0.1;
+    max-width: 100%;
+    max-height: 100%;
+
+    opacity: 0;
+    /* animation-name is applied on first film's image load */
+    /* animation-name: projtemp-logo-entrance; */
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    overflow-y: scroll;
 }
 
 
-.loop-page {
+@keyframes projtemp-page-entrance {
+    to {opacity: 1}
+}
+.projtemp-page {
     position: relative;
     height: 100%;
     width: 100%;
     overflow-y: scroll;
+
+    opacity: 0;
+    /* animation-name is applied on first film's image load */
+    /* animation-name: projtemp-page-entrance; */
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    overflow-y: scroll;
 }
 @media (min-width: 500px) {
-    .loop-page {
+    .projtemp-page {
         font-size: 20px;
     }
 }
 @media (max-width: 499px) {
-    .loop-page {
+    .projtemp-page {
         font-size: 15px;
     }
 }
 
 
-.loop-top {
+.projtemp-top {
     position: relative;
     height: 500px;
     width: 100%;
@@ -55,7 +75,7 @@
 }
 
 
-.loop-top img {
+.projtemp-top img {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -64,12 +84,12 @@
 }
 
 
-.loop-top-inner {
+.projtemp-top-inner {
     position: relative;
     width: 100%;
     margin: auto auto;
 }
-.loop-top-inner-top {
+.projtemp-top-inner-top {
     position: relative;
     width: 100%;
     margin-bottom: 15px;
@@ -80,7 +100,7 @@
 }
 
 
-.loop-back-button {
+.projtemp-back-button {
     position: relative;
     align-self: center;
     font-size: 25px;
@@ -97,24 +117,24 @@
     flex-wrap: nowrap;
     align-content: center;
 }
-.loop-back-button:hover {
+.projtemp-back-button:hover {
     opacity: 0.6;
 }
 @media (max-width: 699px) {
-    .loop-back-text {
+    .projtemp-back-text {
         display: none;
     }
-    .loop-back-button {
+    .projtemp-back-button {
         font-size: 30px;
         padding-left: 10px;
     }
-    .loop-top-inner-spacer {
+    .projtemp-top-inner-spacer {
         padding-right: 10px;
     }
 }
 
 
-.loop-title {
+.projtemp-title {
     position: relative;
     text-align: center;
     font-size: 250%;
@@ -125,110 +145,146 @@
 }
 
 
-.loop-top-inner-spacer {
+.projtemp-top-inner-spacer {
     flex-basis: 10%;
     flex-shrink: 1;
 }
 
 
-.loop-top-text {
+.projtemp-top-text {
     margin: auto;
-
     font-style: italic;
     text-align: center;
 }
 @media (min-width: 500px) {
-    .loop-top-text {
+    .projtemp-top-text {
         width: 60%;
     }
 }
 @media (max-width: 499px) {
-    .loop-top-text {
+    .projtemp-top-text {
         width: 75%;
     }
 }
-
-
-.loop-main {
-    position: relative;
-    width: 100%;
+.projtemp-top-text a {
+    text-decoration: none;
+    color: cyan;
+    border-bottom: 1px solid cyan;
+    padding-bottom: 1px;
+    transition-duration: 0.4s;
+}
+.projtemp-top-text a:hover {
+    opacity: 0.6;
 }
 
 
-.loop-li-container {
-    width: 95%;
+.projtemp-main {
+    position: relative;
+    margin: auto;
 }
 @media (min-width: 800px) {
-    .loop-li-container {
+    .projtemp-main {
+        width: 80%;
+    }
+}
+@media (max-width: 799px) {
+    .projtemp-main {
+        width: 100%;
+    }
+}
+
+
+.projtemp-li-container {
+    width: 95%;
+}
+.projtemp-li-container a {
+    text-decoration: none;
+    color: cyan;
+    border-bottom: 1px solid cyan;
+    padding-bottom: 1px;
+    transition-duration: 0.4s;
+}
+.projtemp-li-container a:hover {
+    opacity: 0.6;
+}
+@media (min-width: 800px) {
+    .projtemp-li-container {
         margin: 150px auto;
     }
-    .loop-li {
+    .projtemp-li {
         display: inline-flex;
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
     }
-    .loop-li-imgIsLeft {
+    .projtemp-li-imgIsLeft {
         justify-content: flex-start;
     }
-    .loop-li-imgIsRight {
+    .projtemp-li-imgIsRight {
         justify-content: flex-end;
         text-align: right;
     }
-    .loop-li-imgIsLeft .loop-li-imgdiv {
+    .projtemp-li-imgIsLeft .projtemp-li-imgdiv {
         padding-right: 30px;
     }
-    .loop-li-imgIsRight .loop-li-imgdiv {
+    .projtemp-li-imgIsRight .projtemp-li-imgdiv {
         padding-left: 30px;
     }
-    .loop-li-text {
+    .projtemp-li-text {
         flex-basis: 500px;
         flex-shrink: 1;
     }
-    .loop-li-imgdiv {
+    .projtemp-li-imgdiv {
         flex-basis: 500px;
         flex-shrink: 1;
     }
 }
 @media (max-width: 799px) {
-    .loop-li-container {
+    .projtemp-li-container {
         margin: 100px auto;
     }
-    .loop-li {
+    .projtemp-li {
         width: 90%;
         margin: auto;
         display: flex;
         flex-wrap: wrap;
         text-align: center;
     }
-    .loop-li .loop-li-imgdiv {
+    .projtemp-li .projtemp-li-imgdiv {
         padding-bottom: 10px;
     }
-    .loop-li-imgIsRight {
+    .projtemp-li-imgIsRight {
         flex-direction: column-reverse;
     }
 }
-.loop-li img {
+.projtemp-li img {
     width: 100%;
     object-fit: cover;
 }
 
 
-.loop-main b {
+.projtemp-main b {
     font-weight: 700;
     font-style: italic;
 }
 
 
-.loop-bottom-back {
+.projtemp-bottom-back {
     position: relative;
     width: 100%;
     font-size: 25px;
     line-height: 100%;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+
+    color: cyan;
+    text-decoration: none;
+    transition-duration: 0.4s;
 
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+.projtemp-bottom-back:hover {
+    opacity: 0.6;
 }
