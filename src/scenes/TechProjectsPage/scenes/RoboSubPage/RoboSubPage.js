@@ -18,15 +18,15 @@ function RoboSubPage() {
             topText={<>
                 is an engineering design team at the University of Michigan.
                 We build and program autonomous underwater vehicles (AUVs) to compete in{" "}
-                <a href="https://robonation.org/">RoboNation</a>'s
-                annual <a href="https://robonation.org/programs/robosub/">RoboSub Competition</a>.
+                <a href="https://robonation.org/" target="_blank" rel="noopener noreferrer">RoboNation</a>'s
+                annual <a href="https://robonation.org/programs/robosub/" target="_blank" rel="noopener noreferrer">RoboSub Competition</a>.
             </>}
             mainListText={
                 [
                     <>
                     <b>Founded by yours truly</b> and other members of the defunct Michigan Hyperloop team
                     (after SpaceX indefinitely postponed its annual competition), MRoboSub (
-                    <a href="https://www.michiganrobosub.com/">website</a>
+                    <a href="https://www.michiganrobosub.com/" target="_blank" rel="noopener noreferrer">website</a>
                     ) served as a project for us to tackle that involved a number of mechanical and
                     software challenges we had not previously faced.
                     </>,
@@ -39,7 +39,7 @@ function RoboSubPage() {
                     Our first year started late and was cut off short by the Coronavirus pandemic.
                     In our <b>two months</b> of focus, we took a pre-existing hardware solution,
                     outfitted it with control and CV logic connected via{" "}
-                    <a href="https://www.ros.org/about-ros/">ROS</a>, and got our sub to maintain
+                    <a href="https://www.ros.org/about-ros/" target="_blank" rel="noopener noreferrer">ROS</a>, and got our sub to maintain
                     given depths/headings and identify the first competition task (a gate) with CV.
                     </>,
                     <>

@@ -24,7 +24,7 @@ function ProjectCard(props) {
 
     let pcardJSX = props.linkInternal ?
         <NavLink style={style} to={props.link} className="pcard-main">{pcardInnerJSX}</NavLink> :
-        <a style={style} href={props.link} className="pcard-main">{pcardInnerJSX}</a>;
+        <a style={style} href={props.link} className="pcard-main" target="_blank" rel="noopener noreferrer">{pcardInnerJSX}</a>;
 
     return pcardJSX;
 }

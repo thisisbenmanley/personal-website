@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 import RememberStill from './RememberStill.jpg';
 import ViewPointStill from './ViewPointStill.jpg';
@@ -10,7 +11,7 @@ import './FilmsPage.css';
 import '../../common.css';
 
 function FilmsPage() {
-    let MaginationLink = <a href="https://vimeo.com/maginationfilms" className="link-style" style={{color: "white"}}>M-agination Films</a>
+    let MaginationLink = <a href="https://vimeo.com/maginationfilms" className="link-style" style={{color: "white"}} target="_blank" rel="noopener noreferrer">M-agination Films</a>
     let MWBAward1 = "Winner, Best Director in a Student Film, Hollywood Florida Film Fest 2016";
     let MWBAward2 = "Winner, Silver Award, FAME'US Int'l Film Fest Summer 2016";
 
@@ -23,6 +24,7 @@ function FilmsPage() {
 
     return(
         <>
+        <Helmet><title>Ben Manley | Films</title></Helmet>
         <div id="films-header-bkgd" />
         <div className="films-page" style={loading ? {} : {animationName: "films-page-entrance"}}>
             <div className="header-spacer" />
@@ -57,7 +59,7 @@ function FilmsPage() {
                     Award-winning documentary short about my great-great-aunt, 
                     Marion Manley, the first female architect in South Florida.
                     Made in high school with my sister.{" "}
-                    <a href="https://www.miamiherald.com/living/article57137568.html" className="link-style">In the news.</a>
+                    <a href="https://www.miamiherald.com/living/article57137568.html" className="link-style"  target="_blank" rel="noopener noreferrer">In the news.</a>
                 </>}
                 // embedSrc="https://www.youtube.com/embed/ndou7BDIi1k"
                 videoLink="https://www.youtube.com/watch?v=5BSjBLa1ElY"

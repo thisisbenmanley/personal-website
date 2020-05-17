@@ -70,7 +70,8 @@ function Film(props) {
                 </div>
             </div>
             <a href={props.videoLink} className="film-play"
-                    style={props.loading ? {} : {animationName: "shrink-play-button"}}>
+                    style={props.loading ? {} : {animationName: "shrink-play-button"}}
+                    target="_blank" rel="noopener noreferrer">
                 <span style={{paddingRight: "10px"}}>Click to<br/>watch</span>
                 <FaPlayCircle style={{fontSize: "250%"}} />
             </a>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import {FaLinkedinIn, FaGithub, FaStackOverflow, FaEnvelope} from 'react-icons/fa';
 
 import portrait from './Ben_Manley_Portrait.jpg';
@@ -37,6 +38,8 @@ function AboutPage() {
     }
 
     return (
+        <>
+        <Helmet><title>Ben Manley | About</title></Helmet>
         <div className="about-page"
             style={loading ? {} : {animationName: "about-page-entrance"}}>
 
@@ -60,16 +63,16 @@ function AboutPage() {
 
                     <div>
                         <div className="about-button-container">
-                            <a className="about-button" href="https://www.linkedin.com/in/benjamin-manley/">
+                            <a className="about-button" href="https://www.linkedin.com/in/benjamin-manley/" target="_blank" rel="noopener noreferrer">
                                 <FaLinkedinIn style={{color: "#0077B5"}} className="logo-svg" />
                             </a>
-                            <a className="about-button" href="https://github.com/thisisbenmanley">
+                            <a className="about-button" href="https://github.com/thisisbenmanley" target="_blank" rel="noopener noreferrer">
                                 <FaGithub style={{color: "white"}} className="logo-svg" />
                             </a>
-                            <a className="about-button" href="https://stackoverflow.com/users/11910197/thisisbenmanley?tab=profile">
+                            <a className="about-button" href="https://stackoverflow.com/users/11910197/thisisbenmanley?tab=profile" target="_blank" rel="noopener noreferrer">
                                 <FaStackOverflow style={{color: "#F48024"}} className="logo-svg" />
                             </a>
-                            <a className="about-button" href="mailto:ben@benmanley.dev">
+                            <a className="about-button" href="mailto:ben@benmanley.dev" target="_blank" rel="noopener noreferrer">
                                 <FaEnvelope style={{color: "white"}} className="logo-svg" />
                             </a>
                         </div>
@@ -89,7 +92,7 @@ function AboutPage() {
                     <div className="about-li about-li-iconIsRight">
                         <div>
                             I'm graduating from the <span className="about-emphasis">University of Michigan</span> in 2022 with
-                            a <a style={{color: colors["michigan"]}} href="https://cse.engin.umich.edu/" className="link-style">Master's in Computer Science Engineering</a> and an undergraduate
+                            a <a style={{color: colors["michigan"]}} href="https://cse.engin.umich.edu/" className="link-style" target="_blank" rel="noopener noreferrer">Master's in Computer Science Engineering</a> and an undergraduate
                             minor in Physics.
                         </div>
                         <img src={blockMIcon} alt="block M icon" />
@@ -101,7 +104,7 @@ function AboutPage() {
                         <div>
                             I plan to explore as many topics within Computer Science as I can. So far, my <NavLink style={{color: colors["cs"]}} to="/projects" className="link-style">projects</NavLink>{" "}
                             have focused on <span className="about-emphasis">embedded systems</span> and <span className="about-emphasis">real-time programming</span>, and I'm dabbling in
-                            web development <span>(check <a style={{color: colors["cs"]}} href="/" className="link-style">this cool website</a> out!).</span>
+                            web development <span>(check <a style={{color: colors["cs"]}} href="/" className="link-style" target="_blank" rel="noopener noreferrer">this cool website</a> out!).</span>
                         </div>
                     </div>
                 </div>
@@ -119,9 +122,9 @@ function AboutPage() {
                     <div className="about-li about-li-iconIsLeft">
                         <img src={workIcon} alt="work icon" />
                         <div>
-                            Last summer (2019), I completed an internship with <a style={{color: colors["work"]}} href="https://honeybeerobotics.com" className="link-style nowrap">Honeybee Robotics</a> in
+                            Last summer (2019), I completed an internship with <a style={{color: colors["work"]}} href="https://honeybeerobotics.com" className="link-style nowrap" target="_blank" rel="noopener noreferrer">Honeybee Robotics</a> in
                             Pasadena, CA. This summer (2020), I'll be completing a virtual internship with
-                            the <a style={{color: colors["work"]}} href="https://www.microsoft.com/en-us/garage/" className="link-style nowrap">Microsoft Garage</a>.
+                            the <a style={{color: colors["work"]}} href="https://www.microsoft.com/en-us/garage/" className="link-style nowrap" target="_blank" rel="noopener noreferrer">Microsoft Garage</a>.
                         </div>
                     </div>
                 </div>
@@ -129,7 +132,7 @@ function AboutPage() {
                     <div className="about-li about-li-iconIsRight">
                         <div>
                             In my spare time, I'm an Ambassador and Board Member of the{" "}
-                            <a style={{color: colors["earpeace"]}} href="http://www.earpeacefoundation.org/" className="link-style">Ear Peace: Save Your Hearing Foundation</a>.
+                            <a style={{color: colors["earpeace"]}} href="http://www.earpeacefoundation.org/" className="link-style" target="_blank" rel="noopener noreferrer">Ear Peace: Save Your Hearing Foundation</a>.
                             Protect your ears!
                         </div>
                         <img src={EarPeaceLogo} alt="EarPeace logo" />
@@ -142,7 +145,7 @@ function AboutPage() {
                     <div id="resume-line">
                         For more information: if you prefer crowded text on a white background, check out my <NavLink to="/resume" className="link-style">resumé</NavLink>,
                         or just{" "}
-                        <a href="mailto:ben@benmanley.dev" className="link-style nowrap">email me</a>!
+                        <a href="mailto:ben@benmanley.dev" className="link-style nowrap" target="_blank" rel="noopener noreferrer">email me</a>!
                     </div>
                 </div>
 
@@ -153,19 +156,19 @@ function AboutPage() {
                     <ul id="fun-facts-list">
                         <li className="fun-facts-li">
                             I made a{" "}
-                            <a href="https://www.youtube.com/watch?v=LwdD47AoS7w" className="link-style">TEDx talk</a>
+                            <a href="https://www.youtube.com/watch?v=LwdD47AoS7w" className="link-style" target="_blank" rel="noopener noreferrer">TEDx talk</a>
                             {" "}in 10th grade
                         </li>
                         <li className="fun-facts-li">I've studied abroad in Hong Kong</li>
                         <li className="fun-facts-li">
                             I'm a Graphic Designer for UMich's satirical newspaper,{" "}
-                            <a href="https://everythreeweekly.com/" className="link-style" style={{fontStyle: "italic"}}>
+                            <a href="https://everythreeweekly.com/" className="link-style" style={{fontStyle: "italic"}} target="_blank" rel="noopener noreferrer">
                                 The Every Three Weekly
                             </a>
                         </li>
                         <li className="fun-facts-li">
                             I was the photographer for the album cover of a{" "}
-                            <a href="http://www.nestortorres.com/8-music/4-nestor-torres-jazz-flute-traditions" className="link-style">
+                            <a href="http://www.nestortorres.com/8-music/4-nestor-torres-jazz-flute-traditions" className="link-style" target="_blank" rel="noopener noreferrer">
                                 Latin-Grammy-nominated Jazz album
                             </a>
                         </li>
@@ -173,6 +176,7 @@ function AboutPage() {
                 </div>
             </div>
         </div>
+        </>
     );
 }
 

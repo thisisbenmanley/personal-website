@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { Route, Switch } from 'react-router-dom';
 
 import HyperloopPage from './scenes/HyperloopPage/HyperloopPage';
@@ -21,7 +22,7 @@ function TechProjectsPage(props) {
             <Route exact path={props.match.url+"/"} component={TechProjectsHomePage} />
             <Route path={props.match.url+"/hyperloop"} component={HyperloopPage} />
             <Route path={props.match.url+"/robosub"} component={RoboSubPage} />
-            <Route path={props.match.url+"/*"} component={FourOhFourPage}/>
+            <Route path={props.match.url+"/*"} component={FourOhFourPage} />
         </Switch>
     );
 }
@@ -41,6 +42,7 @@ function TechProjectsHomePage(props) {
 
     return (
         <>
+        <Helmet><title>Ben Manley | Tech Projects</title></Helmet>
         <div id="projects-header-bkgd" />
         <div id="projects-page" style={loading ? {} : {animationName: "projects-page-entrance"}}>
             <div style={{flexBasis: "100%"}}>
@@ -114,8 +116,6 @@ function TechProjectsHomePage(props) {
                 </>}
                 linkInternal={false}
                 link="https://devpost.com/software/super-midio-bros-pno9rv"
-                // https://github.com/eashwar/super-midio-bros#super-midio-bros
-                // https://www.youtube.com/watch?v=cunnLp3Ipi8
             />
         </div>
         </>

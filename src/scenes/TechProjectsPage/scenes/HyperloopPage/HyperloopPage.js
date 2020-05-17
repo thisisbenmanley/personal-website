@@ -18,14 +18,14 @@ function HyperloopPage() {
             topText={<>
                 was an engineering design team at the University of Michigan.
                 We designed, manufactured, and tested vehicles to compete in{" "}
-                <a href="https://www.spacex.com/">SpaceX</a>'s
-                annual <a href="https://www.spacex.com/hyperloop">Hyperloop Pod Competition</a>.
+                <a href="https://www.spacex.com/" target="_blank" rel="noopener noreferrer">SpaceX</a>'s
+                annual <a href="https://www.spacex.com/hyperloop" target="_blank" rel="noopener noreferrer">Hyperloop Pod Competition</a>.
             </>}
             mainListText={
                 [
                     <>
                     The Hyperloop concept was first{" "}
-                    <a href="https://www.spacex.com/sites/spacex/files/hyperloop_alpha.pdf">introduced</a>{" "}
+                    <a href="https://www.spacex.com/sites/spacex/files/hyperloop_alpha.pdf" target="_blank" rel="noopener noreferrer">introduced</a>{" "}
                     in 2013: have a train levitate in a vacuum tube, removing wheel friction and
                     air friction. SpaceX built a mile-long vacuum tube and established a competition for
                     university teams to develop Hyperloop pods with a single criterium: the highest speed wins.

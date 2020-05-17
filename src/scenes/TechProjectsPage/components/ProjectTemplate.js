@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { NavLink } from 'react-router-dom';
 import { FaChevronLeft } from 'react-icons/fa';
 
@@ -39,6 +40,7 @@ function ProjectTemplate(props) {
 
     return (
         <>
+        <Helmet><title>Ben Manley | {props.title}</title></Helmet>
         <div id="projtemp-header-bkgd" />
         <img src={props.bkgdImgSrc} alt="project logo" className="projtemp-logo"
             style={loading ? {} : {animationName: "projtemp-logo-entrance"}} />

@@ -5,6 +5,8 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
+import ReactGA from 'react-ga';
+import { createBrowserHistory } from 'history';
 import * as serviceWorker from './serviceWorker';
 
 import Header from './components/Header';
@@ -16,9 +18,19 @@ import FourOhFourPage from './scenes/404Page/404Page'; // can't start with numbe
 
 import './index.css';
 
+const trackingId = "UA-166928173-1";
+ReactGA.initialize(trackingId);
+
+// Initialize google analytics page view tracking
+const history = createBrowserHistory();
+history.listen(location => {
+  ReactGA.set({ page: location.pathname }); // Update the user's current page
+  ReactGA.pageview(location.pathname); // Record a pageview for the given page
+});
+
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename={`${process.env.PUBLIC_URL}/`}>
+    <Router basename={`${process.env.PUBLIC_URL}/`} history={history}>
       <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet"/>
       <div id="index-div">
         <Header />
