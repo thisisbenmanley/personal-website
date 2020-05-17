@@ -101,7 +101,7 @@ function TechProjectsHomePage(props) {
                     This website - a React app, built and styled from scratch.
                 </>}
                 linkInternal={false}
-                link="https://github.com/thisisbenmanley/personal-website#my-personal-website"
+                link="https://github.com/thisisbenmanley/personal-website#ben-manleys-personal-website"
             />
 
             <ProjectCard
