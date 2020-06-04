@@ -44,6 +44,7 @@ function AboutPage() {
             style={loading ? {} : {animationName: "about-page-entrance"}}>
 
             <div id="about-header-bkgd" />
+            <div id="about-header-portrait-bkgd" />
 
             <img className="about-portrait"
                 src={portrait}

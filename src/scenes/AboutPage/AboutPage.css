@@ -32,9 +32,21 @@
     left: 0;
     right: 0;
     background-image: linear-gradient(
+        to bottom, rgb(10,10,10) 35%,  transparent
+    );
+    z-index: 2;
+}
+#about-header-portrait-bkgd {
+    position: fixed;
+    height: 15vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(
         to bottom, rgb(25,25,25),  transparent
     );
-    z-index: 3;
+    z-index: 4;
 }
 
 
@@ -45,7 +57,7 @@
     top: 0;
     bottom: 0;
     left: 0;
-    z-index: 2;
+    z-index: 3;
 }
 @media (min-width: 800px) {
     .about-portrait {
