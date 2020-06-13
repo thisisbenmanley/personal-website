@@ -8,7 +8,12 @@ import '../../common.css';
 function ResumePage() {
     return (
         <>
-        <Helmet><title>Ben Manley | Resumé</title></Helmet>
+        <Helmet>
+            <title>Ben Manley | Resumé</title>
+            <meta name="description" content="I'm graduating from Michigan in 2022 
+                with a Master's in Computer Science. Work experience includes Microsoft 
+                and Honeybee Robotics." />
+        </Helmet>
         <div id="resume-page">
             <div className="header-spacer" />
             <iframe src={pdf} title="Ben's Resumé" id="resume-iframe" />

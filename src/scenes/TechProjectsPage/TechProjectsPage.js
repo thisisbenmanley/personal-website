@@ -42,7 +42,11 @@ function TechProjectsHomePage(props) {
 
     return (
         <>
-        <Helmet><title>Ben Manley | Tech Projects</title></Helmet>
+        <Helmet>
+            <title>Ben Manley | Tech Projects</title>
+            <meta name="description" content="Check out the projects I've worked on, from 
+                robotics and embedded systems to web development." />
+        </Helmet>
         <div id="projects-header-bkgd" />
         <div id="projects-page" style={loading ? {} : {animationName: "projects-page-entrance"}}>
             <div style={{flexBasis: "100%"}}>

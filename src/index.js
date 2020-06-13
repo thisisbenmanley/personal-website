@@ -1,5 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
+import { render } from 'react-snapshot';
 import {
   BrowserRouter as Router,
   Route,
@@ -28,7 +29,8 @@ history.listen(location => {
   ReactGA.pageview(location.pathname); // Record a pageview for the given page
 });
 
-ReactDOM.render(
+// ReactDOM.render(
+render(
   <React.StrictMode>
     <Router basename={`${process.env.PUBLIC_URL}/`} history={history}>
       <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet"/>

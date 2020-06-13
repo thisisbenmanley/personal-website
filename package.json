@@ -20,7 +20,7 @@
     "predeploy": "npm run build && echo 'benmanley.dev' > ./build/CNAME",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && react-snapshot",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -40,6 +40,16 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "react-snapshot": "^1.3.0"
+  },
+  "reactSnapshot": {
+    "include": [
+      "/films",
+      "/resume",
+      "/projects",
+      "/projects/hyperloop",
+      "/projects/robosub"
+    ]
   }
 }

@@ -39,7 +39,11 @@ function AboutPage() {
 
     return (
         <>
-        <Helmet><title>Ben Manley | About</title></Helmet>
+        <Helmet>
+            <title>Ben Manley | About</title>
+            <meta name="description" content="I'm Ben Manley, a Computer Science student 
+                and filmmaker at the University of Michigan. Check out my site!" />
+        </Helmet>
         <div className="about-page"
             style={loading ? {} : {animationName: "about-page-entrance"}}>
 

@@ -147,7 +147,11 @@ function FilmsPage() {
 
     return(
         <>
-        <Helmet><title>Ben Manley | Films</title></Helmet>
+        <Helmet>
+            <title>Ben Manley | Films</title>
+            <meta name="description" content="I'm a student studying Computer Science, 
+                but filmmaking is another passion of mine. Check out the films I've worked on." />
+        </Helmet>
         <div id="films-header-bkgd" />
         <div ref={(el) => filmPageElement = el} className="films-page"
                 style={loading ? {} : {animationName: "films-page-entrance"}}>
