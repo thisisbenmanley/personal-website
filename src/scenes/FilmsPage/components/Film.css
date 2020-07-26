@@ -6,7 +6,12 @@
     z-index: 0;
     transition-duration: 0.5s;
 }
-@media (min-width: 500px) {
+@media (min-width: 2500px) {
+    .film-main {
+        height: 70vh;
+    }
+}
+@media (min-width: 500px) and (max-width: 2499px) {
     .film-main {
         height: 600px;
     }
