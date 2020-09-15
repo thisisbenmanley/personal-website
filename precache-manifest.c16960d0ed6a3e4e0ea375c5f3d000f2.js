@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eb17ca86f236d963f1165c874a814273",
+    "revision": "3e1bf3a589a79355539faa1d6ed492f2",
     "url": "/index.html"
   },
   {
-    "revision": "289944780f936a8539ac",
+    "revision": "cf5776f1f2c697e53b4c",
     "url": "/static/css/main.a85fee6e.chunk.css"
   },
   {
@@ -16,20 +16,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.8ad7b5a5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "289944780f936a8539ac",
-    "url": "/static/js/main.ce673bc5.chunk.js"
+    "revision": "cf5776f1f2c697e53b4c",
+    "url": "/static/js/main.8080d0cf.chunk.js"
   },
   {
     "revision": "7340797c3d775c8495e4",
     "url": "/static/js/runtime-main.d7d89e4f.js"
   },
   {
-    "revision": "3917b8ba84cbdd135ce01241139c7270",
-    "url": "/static/media/Ben_Manley_Portrait.3917b8ba.jpg"
+    "revision": "690051aad5e24850f58e91c45b359a46",
+    "url": "/static/media/Ben Manley Headshot.690051aa.jpg"
   },
   {
-    "revision": "d3288b26af218b28e33171399fa20ae5",
-    "url": "/static/media/Ben_Manley_Resume.d3288b26.pdf"
+    "revision": "163d9d326c587e43a7c6dfddc39526df",
+    "url": "/static/media/Ben_Manley_Resume.163d9d32.pdf"
   },
   {
     "revision": "e704194a1fcaba7e284448a7e9250e3f",
