@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import {FaLinkedinIn, FaGithub, FaStackOverflow, FaEnvelope} from 'react-icons/fa';
 
-import portrait from './Ben_Manley_Portrait.jpg';
+import portrait from './Ben Manley Headshot.jpg';
 import palmIcon from './palm-icon.png';
 import blockMIcon from './blockm-icon.png';
 import htmlTagIcon from './html-tag-icon.png';
@@ -127,9 +127,9 @@ function AboutPage() {
                     <div className="about-li about-li-iconIsLeft">
                         <img src={workIcon} alt="work icon" />
                         <div>
-                            Last summer (2019), I completed an internship with <a style={{color: colors["work"]}} href="https://honeybeerobotics.com" className="link-style nowrap" target="_blank" rel="noopener noreferrer">Honeybee Robotics</a> in
-                            Pasadena, CA. This summer (2020), I'll be completing a virtual internship with
-                            the <a style={{color: colors["work"]}} href="https://www.microsoft.com/en-us/garage/" className="link-style nowrap" target="_blank" rel="noopener noreferrer">Microsoft Garage</a>.
+                            I've completed internships developing planetary exploration technology at <a style={{color: colors["work"]}} href="https://honeybeerobotics.com" className="link-style nowrap" target="_blank" rel="noopener noreferrer">Honeybee Robotics</a> and
+                            improving Microsoft Teams in the <a style={{color: colors["work"]}} href="https://www.microsoft.com/en-us/garage/" className="link-style nowrap" target="_blank" rel="noopener noreferrer">Microsoft Garage</a>. This summer (2021), I'll be
+                            in Redmond helping build <a style={{color: colors["work"]}} href="https://www.starlink.com/" className="link-style nowrap" target="_blank" rel="noopener noreferrer">SpaceX's Starlink</a> internet satellite system.
                         </div>
                     </div>
                 </div>
