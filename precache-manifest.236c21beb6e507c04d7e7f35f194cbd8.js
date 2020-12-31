@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "32ea87e4d61b2966f514ef16df077536",
+    "revision": "fb0d8e7e36263de92a20faf11ecbcf66",
     "url": "/index.html"
   },
   {
-    "revision": "b670f7706805e291aae0",
+    "revision": "dbda782cfb64fddc5f88",
     "url": "/static/css/main.a85fee6e.chunk.css"
   },
   {
-    "revision": "8cb9b435212e50f22f5c",
-    "url": "/static/js/2.8ad7b5a5.chunk.js"
+    "revision": "66de42e6b9da17401d6c",
+    "url": "/static/js/2.70ccc131.chunk.js"
   },
   {
     "revision": "54fd6816419f7824e2804745930c9117",
-    "url": "/static/js/2.8ad7b5a5.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.70ccc131.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b670f7706805e291aae0",
-    "url": "/static/js/main.eb280b67.chunk.js"
+    "revision": "dbda782cfb64fddc5f88",
+    "url": "/static/js/main.4e5908f3.chunk.js"
   },
   {
     "revision": "7340797c3d775c8495e4",
@@ -25,7 +25,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "690051aad5e24850f58e91c45b359a46",
-    "url": "/static/media/Ben Manley Headshot.690051aa.jpg"
+    "url": "/static/media/Ben_Manley_Portrait.690051aa.jpg"
   },
   {
     "revision": "163d9d326c587e43a7c6dfddc39526df",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e704194a1fcaba7e284448a7e9250e3f",
     "url": "/static/media/CV.e704194a.png"
+  },
+  {
+    "revision": "586fb9de37a1bca660e74da3c11eeae8",
+    "url": "/static/media/Dranzleyder.586fb9de.jpg"
   },
   {
     "revision": "a6ad04ec90626e88ee451cd5b08bf1ae",
