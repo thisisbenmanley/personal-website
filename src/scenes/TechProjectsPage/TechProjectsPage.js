@@ -8,6 +8,7 @@ import FourOhFourPage from '../404Page/404Page';
 
 import HyperloopPic from './Hyperloop.png';
 import RoboSubPic from './RoboSub.jpg';
+import DranzleyderPic from './Dranzleyder.jpg';
 import WWWPic from './WWW.png';
 import WebsitePic from './Website.jpg';
 import SuperMIDIoBrosPic from './SuperMIDIoBros.png';
@@ -83,6 +84,33 @@ function TechProjectsHomePage(props) {
 
             <ProjectCard
                 loading={loading}
+                bkgdSrc={WebsitePic}
+                title="Personal Website"
+                categories="Design, Web Development"
+                roles="Independent"
+                description={<>
+                    This website - a React app, built and styled from scratch.
+                </>}
+                linkInternal={false}
+                link="https://github.com/thisisbenmanley/personal-website#ben-manleys-personal-website"
+            />
+
+            <ProjectCard
+                loading={loading}
+                bkgdSrc={DranzleyderPic}
+                title="The Dranzleyder"
+                categories="Browser Extension, Web Development"
+                roles="Independent"
+                description={<>
+                    A browser extension I made as a joke, live on the Chrome Web Store,
+                    that translates all text on a given webpage to a "softer" pronunciation.
+                </>}
+                linkInternal={false}
+                link="https://github.com/thisisbenmanley/dranzleyder"
+            />
+
+            <ProjectCard
+                loading={loading}
                 bkgdSrc={WWWPic}
                 title="Warmer Winter Walks"
                 categories="User Interfaces, Web Development"
@@ -93,19 +121,6 @@ function TechProjectsHomePage(props) {
                 </>}
                 linkInternal={false}
                 link="https://github.com/montanamott/warmer-winter-walks#warmer-winter-walks"
-            />
-
-            <ProjectCard
-                loading={loading}
-                bkgdSrc={WebsitePic}
-                title="Personal Website"
-                categories="Design, Web Development"
-                roles="Independent"
-                description={<>
-                    This website - a React app, built and styled from scratch.
-                </>}
-                linkInternal={false}
-                link="https://github.com/thisisbenmanley/personal-website#ben-manleys-personal-website"
             />
 
             <ProjectCard
