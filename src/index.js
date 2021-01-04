@@ -1,11 +1,6 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import { render } from 'react-snapshot';
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch
-} from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 import ReactGA from 'react-ga';
 import { createBrowserHistory } from 'history';
 import * as serviceWorker from './serviceWorker';
