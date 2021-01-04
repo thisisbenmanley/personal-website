@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import throttle from 'lodash.throttle';
 import { Helmet } from 'react-helmet';
 
 import RememberStill from './RememberStill.jpg';
@@ -16,6 +17,8 @@ function FilmsPage() {
     let MWBAward2 = "Winner, Silver Award, FAME'US Int'l Film Fest Summer 2016";
     let filmPageElement = null;
     let filmCardElements = [];
+
+    let throttledHandleScroll = throttle(handleScroll, 300);
 
     const [loading, setLoading] = useState(true);
     const [windowHeight, setWindowHeight] = useState(0);
@@ -57,13 +60,13 @@ function FilmsPage() {
         handleScroll();
         window.addEventListener('resize', updateWindowDimensions);
         if (filmPageElement != null) {
-            filmPageElement.addEventListener('scroll', handleScroll);
+            filmPageElement.addEventListener('scroll', throttledHandleScroll);
         }
 
         return function() {
             window.removeEventListener('resize', updateWindowDimensions);
             if (filmPageElement != null) {
-                filmPageElement.removeEventListener('scroll', handleScroll);
+                filmPageElement.removeEventListener('scroll', throttledHandleScroll);
             }
         }
     });
