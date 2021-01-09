@@ -3,7 +3,7 @@ import React from 'react';
 import Logo from './Logo.png';
 import WateryM from './WateryM.jpg';
 import Working from './Working.jpg';
-import ROS from './ROS.png';
+import System from './System.svg';
 import CV from './CV.png';
 import Sub from './Sub.jpg';
 
@@ -24,37 +24,36 @@ function RoboSubPage() {
             mainListText={
                 [
                     <>
-                    <b>Founded by yours truly</b> and other members of the defunct Michigan Hyperloop team
-                    (after SpaceX indefinitely postponed its annual competition), MRoboSub (
+                    <b>Founded by yours truly</b> and other members of the Michigan Hyperloop team, MRoboSub (
                     <a href="https://www.michiganrobosub.com/" target="_blank" rel="noopener noreferrer">website</a>
                     ) served as a project for us to tackle that involved a number of mechanical and
                     software challenges we had not previously faced.
                     </>,
                     <>
-                    I work as the <b>Software Lead</b>, managing a team of engineers to develop
+                    I've worked as the <b>Software Lead</b>, managing a team of engineers to develop
                     a system that navigates a pool and completes a series of competition tasks,{" "}
-                    <b>all autonomously through machine learning and computer vision</b>.
+                    <b>all autonomously through machine learning and computer vision (CV)</b>.
                     </>,
                     <>
-                    Our first year started late and was cut off short by the Coronavirus pandemic.
-                    In our <b>two months</b> of focus, we took a pre-existing hardware solution,
-                    outfitted it with control and CV logic connected via{" "}
-                    <a href="https://www.ros.org/about-ros/" target="_blank" rel="noopener noreferrer">ROS</a>, and got our sub to maintain
-                    given depths/headings and identify the first competition task (a gate) with CV.
+                    In our first competition season, we've developed motor control and task planning algorithms,
+                    object detection CV models, and state- and error-handling logic, all
+                    connected via <a href="https://www.ros.org/about-ros/" target="_blank" rel="noopener noreferrer">ROS</a>.
+                    We complete pool testing to verify proper integration between our
+                    independently-developed software "nodes".
                     </>,
                     <>
-                    This coming year, as a Senior, I plan on taking on more of a mentor
+                    This coming year, as a Master's student, I will take on a mentor
                     role to ensure the team's continued success after my graduation.
-                    I'm eager to see what an entire school year will yield after our
-                    success from only two months.
+                    I'm eager to see what this great team can produce post-pandemic
+                    given our success thus far!
                     </>
                 ]
             }
             mainListMedia={
                 [
                     <img src={Working} alt="robosub team working pic" />,
-                    <img src={ROS} alt="robosub robot operating system data diagram" />,
                     <img src={CV} alt="robosub computer vision pic" />,
+                    <img src={System} alt="robosub software system diagram" />,
                     <img src={Sub} alt="robosub sub pic" />
                 ]
             }
