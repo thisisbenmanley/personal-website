@@ -22,56 +22,8 @@ function FilmsPage() {
 
     const [loading, setLoading] = useState(true);
     const [windowHeight, setWindowHeight] = useState(0);
-    const [filmInFocus, setFilmInFocus] = useState([]);
-
-    // Help remove glitchy image load
-    function imgLoaded() {
-        setLoading(false);
-    }
-
-    function updateFilmFocus() {
-        // filmTop represents distance (signed) from top of el to top of window
-        // filmTop + 600 == 0 ==> 0%
-        // filmTop == windowHeight ==> 100%
-        // The 600 should be a 500 on mobile, but it still looks fine with this math
-        let filmInFocusTemp = [];
-        let focusChanged = false;
-        filmCardElements.forEach((el, index) => {
-            const filmTop = el.getBoundingClientRect()["top"];
-            let percentPastFilm = 100 * (filmTop + 600) / (windowHeight + 600);
-            filmInFocusTemp[index] = (percentPastFilm >= 27 && percentPastFilm <= 73);
-            if (filmInFocusTemp[index] !== filmInFocus[index]) focusChanged = true;
-        });
-
-        if (focusChanged) setFilmInFocus(filmInFocusTemp);
-    }
-
-    function updateWindowDimensions() {
-        setWindowHeight(window.innerHeight);
-        if (filmPageElement != null) updateFilmFocus();
-    }
-
-    function handleScroll() {
-        if (filmPageElement != null) updateFilmFocus();
-    }
-
-    useEffect(function() {
-        updateWindowDimensions();
-        handleScroll();
-        window.addEventListener('resize', updateWindowDimensions);
-        if (filmPageElement != null) {
-            filmPageElement.addEventListener('scroll', throttledHandleScroll);
-        }
-
-        return function() {
-            window.removeEventListener('resize', updateWindowDimensions);
-            if (filmPageElement != null) {
-                filmPageElement.removeEventListener('scroll', throttledHandleScroll);
-            }
-        }
-    });
-
-
+    //const [filmInFocus, setFilmInFocus] = useState(false);
+    let filmInFocus = [], setFilmInFocus = [];
 
     const filmCards = [
         <Film
@@ -142,10 +94,67 @@ function FilmsPage() {
         />,
     ];
 
-    const filmCardWrappers = filmCards.map((card, index) => 
-        <div ref={(el) => filmCardElements[index] = el}>{card}</div>
-    );
 
+    // 
+    console.log("boutta call useState")
+    for (let index = 0; index < filmCards.length; ++index) {
+        [filmInFocus[index], setFilmInFocus[index]] = useState(false); // eslint-disable-line react-hooks/rules-of-hooks
+    };
+
+    // Help remove glitchy image load
+    function imgLoaded() {
+        setLoading(false);
+    }
+
+    function updateFilmFocus() {
+        // filmTop represents distance (signed) from top of el to top of window
+        // filmTop + 600 == 0 ==> 0%
+        // filmTop == windowHeight ==> 100%
+        // The 600 should be a 500 on mobile, but it still looks fine with this math
+        //let filmInFocusTemp = [];
+        //let focusChanged = false;
+        console.log("updating film focus, filmCardElements has " + filmCardElements.length + " items")
+        filmCardElements.forEach((el, index) => {
+            const filmTop = el.getBoundingClientRect()["top"];
+            let percentPastFilm = (filmTop + 600) / (windowHeight + 600);
+            //filmInFocusTemp[index] = (percentPastFilm >= 27 && percentPastFilm <= 73);
+            //if (filmInFocusTemp[index] !== filmInFocus[index]) focusChanged = true;
+            let filmInFocusTemp = (percentPastFilm >= 0.27 && percentPastFilm <= 0.73);
+            if (filmInFocusTemp !== filmInFocus[index]) setFilmInFocus[index](filmInFocusTemp);
+        });
+
+        //if (focusChanged) setFilmInFocus(filmInFocusTemp);
+    }
+
+    function updateWindowDimensions() {
+        setWindowHeight(window.innerHeight);
+        if (filmPageElement != null) updateFilmFocus();
+    }
+
+    function handleScroll() {
+        if (filmPageElement != null) updateFilmFocus();
+    }
+
+    useEffect(function() {
+        updateWindowDimensions();
+        handleScroll();
+        window.addEventListener('resize', updateWindowDimensions);
+        if (filmPageElement != null) {
+            filmPageElement.addEventListener('scroll', throttledHandleScroll);
+        }
+
+        return function() {
+            window.removeEventListener('resize', updateWindowDimensions);
+            if (filmPageElement != null) {
+                filmPageElement.removeEventListener('scroll', throttledHandleScroll);
+            }
+        }
+    });
+
+
+    const filmCardWrappers = filmCards.map((card, index) => 
+        <div key={index} ref={(el) => filmCardElements[index] = el}>{card}</div>
+    );
 
 
     return(

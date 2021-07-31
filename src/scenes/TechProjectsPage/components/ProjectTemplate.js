@@ -28,7 +28,7 @@ function ProjectTemplate(props) {
             "" : <div className="projtemp-li-imgdiv">{props.mainListMedia[index]}</div>;
 
         mainList.push(
-            <div className="projtemp-li-container">
+            <div key={index} className="projtemp-li-container">
                 <div className={"projtemp-li " + liClass}>
                     {leftImg}
                     <div className="projtemp-li-text">{element}</div>
