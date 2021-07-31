@@ -5,6 +5,7 @@ import './Film.css';
 import '../../../common.css';
 
 function Film(props) {
+    console.log("Rendering <Film> for " + props.title)
     return(
         <div className="film-main"
             style={{ filter: props.inFocus ? "none" : "blur(4px)",
