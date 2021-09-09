@@ -4,10 +4,13 @@ import { Route, Switch } from 'react-router-dom';
 
 import HyperloopPage from './scenes/HyperloopPage/HyperloopPage';
 import RoboSubPage from './scenes/RoboSubPage/RoboSubPage';
+import QuantumPaperPage from './scenes/QuantumPaperPage/QuantumPaperPage';
 import FourOhFourPage from '../404Page/404Page';
 
 import HyperloopPic from './Hyperloop.png';
 import RoboSubPic from './RoboSub.jpg';
+import SaniBotPic from './SaniBot.jpg';
+import QuantumPic from './Quantum.jpg';
 import DranzleyderPic from './Dranzleyder.jpg';
 import WWWPic from './WWW.png';
 import WebsitePic from './Website.jpg';
@@ -23,6 +26,7 @@ function TechProjectsPage(props) {
             <Route exact path={props.match.url+"/"} component={TechProjectsHomePage} />
             <Route path={props.match.url+"/hyperloop"} component={HyperloopPage} />
             <Route path={props.match.url+"/robosub"} component={RoboSubPage} />
+            <Route path={props.match.url+"/quantum-decoherence"} component={QuantumPaperPage} />
             <Route path={props.match.url+"/*"} component={FourOhFourPage} />
         </Switch>
     );
@@ -72,7 +76,7 @@ function TechProjectsHomePage(props) {
                 loading={loading}
                 bkgdSrc={RoboSubPic}
                 title="Michigan Robotic Submarine"
-                categories="Embedded Systems, Real-Time Programming, Management"
+                categories="Embedded Systems, Real-Time Programming, Autonomy, Management"
                 roles="Co-Founder, Software Lead"
                 description={<>
                     The control/navigation software for an autonomous underwater
@@ -80,6 +84,33 @@ function TechProjectsHomePage(props) {
                 </>}
                 linkInternal={true}
                 link={props.match.url+"/robosub"}
+            />
+
+            <ProjectCard
+                loading={loading} imgLoaded={imgLoaded}
+                bkgdSrc={SaniBotPic}
+                title="Senior Design Project - SaniBot"
+                categories="Embedded Systems, Real-Time Programming, Autonomy"
+                roles="Team Member"
+                description={<>
+                    A robot that autonomously explores, maps, and segments a space and
+                    sanitizes objects with a UV light.
+                </>}
+                linkInternal={false}
+                link={"https://www.youtube.com/watch?v=pCWeux1shXc"}
+            />
+
+            <ProjectCard
+                loading={loading} imgLoaded={imgLoaded}
+                bkgdSrc={QuantumPic}
+                title="Term Paper - Quantum Decoherence"
+                categories="Quantum Computing"
+                roles="Author"
+                description={<>
+                    Final paper for EECS 598: Quantum Information, Probability, and Computing.
+                </>}
+                linkInternal={true}
+                link={props.match.url+"/quantum-decoherence"}
             />
 
             <ProjectCard

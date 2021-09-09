@@ -108,7 +108,7 @@ function AboutPage() {
                         <img src={htmlTagIcon} alt="html tag icon" />
                         <div>
                             I plan to explore as many topics within Computer Science as I can. So far, my <NavLink style={{color: colors["cs"]}} to="/projects" className="link-style">projects</NavLink>{" "}
-                            have focused on <span className="about-emphasis">embedded systems</span> and <span className="about-emphasis">real-time programming</span>, and I'm dabbling in
+                            have focused on <span className="about-emphasis">embedded systems</span>, <span className="about-emphasis">real-time programming</span>, and <span className="about-emphasis">autonomous robotics</span>, and I'm dabbling in
                             web development <span>(check <a style={{color: colors["cs"]}} href="/" className="link-style" target="_blank" rel="noopener noreferrer">this cool website</a> out!).</span>
                         </div>
                     </div>
@@ -127,9 +127,8 @@ function AboutPage() {
                     <div className="about-li about-li-iconIsLeft">
                         <img src={workIcon} alt="work icon" />
                         <div>
-                            I've completed internships developing planetary exploration technology at <a style={{color: colors["work"]}} href="https://honeybeerobotics.com" className="link-style nowrap" target="_blank" rel="noopener noreferrer">Honeybee Robotics</a> and
-                            improving Microsoft Teams in the <a style={{color: colors["work"]}} href="https://www.microsoft.com/en-us/garage/" className="link-style nowrap" target="_blank" rel="noopener noreferrer">Microsoft Garage</a>. This summer (2021), I'll be
-                            in Redmond helping build <a style={{color: colors["work"]}} href="https://www.starlink.com/" className="link-style nowrap" target="_blank" rel="noopener noreferrer">SpaceX's Starlink</a> internet satellite system.
+                            I've completed internships developing planetary exploration technology at <a style={{color: colors["work"]}} href="https://honeybeerobotics.com" className="link-style nowrap" target="_blank" rel="noopener noreferrer">Honeybee Robotics</a>, owning core features on the router for <a style={{color: colors["work"]}} href="https://www.starlink.com/" className="link-style nowrap" target="_blank" rel="noopener noreferrer">SpaceX's Starlink</a> internet satellite system, and
+                            improving Microsoft Teams in the <a style={{color: colors["work"]}} href="https://www.microsoft.com/en-us/garage/" className="link-style nowrap" target="_blank" rel="noopener noreferrer">Microsoft Garage</a>.
                         </div>
                     </div>
                 </div>
@@ -166,7 +165,7 @@ function AboutPage() {
                         </li>
                         <li className="fun-facts-li">I've studied abroad in Hong Kong</li>
                         <li className="fun-facts-li">
-                            I'm a Graphic Designer for UMich's satirical newspaper,{" "}
+                            I was a Graphic Designer / Photoshopper for UMich's satirical newspaper,{" "}
                             <a href="https://everythreeweekly.com/" className="link-style" style={{fontStyle: "italic"}} target="_blank" rel="noopener noreferrer">
                                 The Every Three Weekly
                             </a>

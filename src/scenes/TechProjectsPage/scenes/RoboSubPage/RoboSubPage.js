@@ -30,19 +30,21 @@ function RoboSubPage() {
                     software challenges we had not previously faced.
                     </>,
                     <>
-                    I've worked as the <b>Software Lead</b>, managing a team of engineers to develop
+                    I worked as the <b>Software Lead</b>, managing a team of engineers to develop
                     a system that navigates a pool and completes a series of competition tasks,{" "}
                     <b>all autonomously through machine learning and computer vision (CV)</b>.
                     </>,
                     <>
-                    In our first competition season, we've developed motor control and task planning algorithms,
+                    In our first competition season, we developed motor control and task planning algorithms,
                     object detection CV models, and state- and error-handling logic, all
                     connected via <a href="https://www.ros.org/about-ros/" target="_blank" rel="noopener noreferrer">ROS</a>.
-                    We complete pool testing to verify proper integration between our
-                    independently-developed software "nodes".
+                    We completed pool testing to verify proper integration between our
+                    independently-developed software "nodes", and, <b>as rookies, the software team took 4th place
+                    out of 20+ teams</b> for our <a href="https://www.youtube.com/watch?v=efBT_6iGaoI" target="_blank" rel="noopener noreferrer">sensor optimization / ML video</a> in
+                    the 2021 online competition!
                     </>,
                     <>
-                    This coming year, as a Master's student, I will take on a mentor
+                    This school year, as a Master's student, I'm taking on a mentor
                     role to ensure the team's continued success after my graduation.
                     I'm eager to see what this great team can produce post-pandemic
                     given our success thus far!
