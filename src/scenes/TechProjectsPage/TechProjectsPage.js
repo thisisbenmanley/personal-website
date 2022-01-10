@@ -5,12 +5,14 @@ import { Route, Switch } from 'react-router-dom';
 import HyperloopPage from './scenes/HyperloopPage/HyperloopPage';
 import RoboSubPage from './scenes/RoboSubPage/RoboSubPage';
 import QuantumPaperPage from './scenes/QuantumPaperPage/QuantumPaperPage';
+import DafinitePaperPage from './scenes/DafinitePaperPage/DafinitePaperPage';
 import FourOhFourPage from '../404Page/404Page';
 
 import HyperloopPic from './Hyperloop.png';
 import RoboSubPic from './RoboSub.jpg';
 import SaniBotPic from './SaniBot.jpg';
 import QuantumPic from './Quantum.jpg';
+import DafinitePic from './Dafinite.jpg';
 import DranzleyderPic from './Dranzleyder.jpg';
 import WWWPic from './WWW.png';
 import WebsitePic from './Website.jpg';
@@ -27,6 +29,7 @@ function TechProjectsPage(props) {
             <Route path={props.match.url+"/hyperloop"} component={HyperloopPage} />
             <Route path={props.match.url+"/robosub"} component={RoboSubPage} />
             <Route path={props.match.url+"/quantum-decoherence"} component={QuantumPaperPage} />
+            <Route path={props.match.url+"/dafinite"} component={DafinitePaperPage} />
             <Route path={props.match.url+"/*"} component={FourOhFourPage} />
         </Switch>
     );
@@ -63,7 +66,7 @@ function TechProjectsHomePage(props) {
                 bkgdSrc={HyperloopPic}
                 title="Michigan Hyperloop"
                 categories="Embedded Systems, Real-Time Programming, Management"
-                roles="Controls/Software Lead"
+                roles="Student Team - Controls/Software Lead"
                 description={<>
                     The computer system and sensor array for a high-speed vehicle
                     competing in SpaceX's Hyperloop Pod Competition.
@@ -73,11 +76,11 @@ function TechProjectsHomePage(props) {
             />
 
             <ProjectCard
-                loading={loading}
+                loading={loading} imgLoaded={imgLoaded}
                 bkgdSrc={RoboSubPic}
                 title="Michigan Robotic Submarine"
                 categories="Embedded Systems, Real-Time Programming, Autonomy, Management"
-                roles="Co-Founder, Software Lead"
+                roles="Student Team - Co-Founder, Software Lead"
                 description={<>
                     The control/navigation software for an autonomous underwater
                     vehicle competing in RoboNation's RoboSub Competition.
@@ -88,10 +91,24 @@ function TechProjectsHomePage(props) {
 
             <ProjectCard
                 loading={loading} imgLoaded={imgLoaded}
+                bkgdSrc={DafinitePic}
+                title="Dafinite"
+                categories="Automatic Verification, Distributed Systems, Research"
+                roles="Graduate Course Research Project"
+                description={<>
+                    Finitization of Dafny protocols to enable model checking 
+                    of Dafny-implemented distributed programs.
+                </>}
+                linkInternal={true}
+                link={props.match.url+"/dafinite"}
+            />
+
+            <ProjectCard
+                loading={loading} imgLoaded={imgLoaded}
                 bkgdSrc={SaniBotPic}
-                title="Senior Design Project - SaniBot"
+                title="SaniBot"
                 categories="Embedded Systems, Real-Time Programming, Autonomy"
-                roles="Team Member"
+                roles="Senior Design Project"
                 description={<>
                     A robot that autonomously explores, maps, and segments a space and
                     sanitizes objects with a UV light.
@@ -103,9 +120,9 @@ function TechProjectsHomePage(props) {
             <ProjectCard
                 loading={loading} imgLoaded={imgLoaded}
                 bkgdSrc={QuantumPic}
-                title="Term Paper - Quantum Decoherence"
+                title="Quantum Decoherence"
                 categories="Quantum Computing"
-                roles="Author"
+                roles="Term Paper"
                 description={<>
                     Final paper for EECS 598: Quantum Information, Probability, and Computing.
                 </>}
@@ -145,7 +162,7 @@ function TechProjectsHomePage(props) {
                 bkgdSrc={WWWPic}
                 title="Warmer Winter Walks"
                 categories="User Interfaces, Web Development"
-                roles="Team Member"
+                roles="Course Project"
                 description={<>
                     An interactive-map React app that provides routes between
                     locations on Michigan's North Campus.

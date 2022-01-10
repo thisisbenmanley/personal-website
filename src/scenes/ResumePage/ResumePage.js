@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 import pdf from './Ben_Manley_Resume.pdf';
-import './ResumePage.css';
+import '../../components/PdfPage.css';
 import '../../common.css';
 
 function ResumePage() {
@@ -14,9 +14,9 @@ function ResumePage() {
                 with a Master's in Computer Science. Work experience includes Microsoft 
                 and Honeybee Robotics." />
         </Helmet>
-        <div id="resume-page">
+        <div id="pdf-page">
             <div className="header-spacer" />
-            <iframe src={pdf} title="Ben's Resumé" id="resume-iframe" />
+            <iframe src={pdf} title="Ben's Resumé" id="pdf-iframe" />
         </div>
         </>
     );

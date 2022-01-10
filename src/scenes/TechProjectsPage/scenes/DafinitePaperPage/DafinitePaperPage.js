@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import pdf from './EECS_598_Final_Project.pdf';
+import pdf from './dafinite.pdf';
 import '../../../../components/PdfPage.css';
 import '../../../../common.css';
 
@@ -9,13 +9,13 @@ function QuantumPaperPage() {
     return (
         <>
         <Helmet>
-            <title>Ben Manley | Quantum Decoherence Term Paper</title>
-            <meta name="description" content="My final paper for EECS 598: 
-                Quantum Information, Probability, and Computing." />
+            <title>Ben Manley | Dafinite</title>
+            <meta name="description" content="My research project for UMich's EECS 591 
+                Distributed Systems: Dafinite, finitization of Dafny protocols." />
         </Helmet>
         <div id="pdf-page">
             <div className="header-spacer" />
-            <iframe src={pdf} title="Term paper on quantum decoherence" id="pdf-iframe" />
+            <iframe src={pdf} title="Graduate course research project: Dafinite" id="pdf-iframe" />
         </div>
         </>
     );
