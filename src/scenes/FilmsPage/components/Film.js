@@ -8,10 +8,11 @@ function Film(props) {
     console.log("Rendering <Film> for " + props.title)
     return(
         <div className="film-main"
-            style={{ filter: props.inFocus ? "none" : "blur(4px)",
+            /*style={{ filter: props.inFocus ? "none" : "blur(4px)",
                      opacity: props.inFocus ? "1" : "0.65",
                      visibility: props.loading ? "hidden" : "visible",
-                   }}>
+                   }}>*/
+            style={{visibility: props.loading ? "hidden" : "visible"}}>
             <img onLoad={props.imgLoaded} src={props.stillSrc} className="film-still" 
                 alt={"'" + props.title + "' Film Still"}/>
             <div className="film-inner">

@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import throttle from 'lodash.throttle';
+// import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+// import throttle from 'lodash.throttle';
 import { Helmet } from 'react-helmet';
 
 import RememberStill from './RememberStill.jpg';
@@ -15,19 +16,20 @@ function FilmsPage() {
     let MaginationLink = <a href="https://vimeo.com/maginationfilms" className="link-style" style={{color: "white"}} target="_blank" rel="noopener noreferrer">M-agination Films</a>
     let MWBAward1 = "Winner, Best Director in a Student Film, Hollywood Florida Film Fest 2016";
     let MWBAward2 = "Winner, Silver Award, FAME'US Int'l Film Fest Summer 2016";
-    let filmPageElement = null;
+    // let filmPageElement = null;
     let filmCardElements = [];
 
-    let throttledHandleScroll = throttle(handleScroll, 300);
+    // let throttledHandleScroll = throttle(handleScroll, 300);
 
     const [loading, setLoading] = useState(true);
-    const [windowHeight, setWindowHeight] = useState(0);
+    // const [windowHeight, setWindowHeight] = useState(0);
     //const [filmInFocus, setFilmInFocus] = useState(false);
-    let filmInFocus = [], setFilmInFocus = [];
+    // let filmInFocus = [], setFilmInFocus = [];
 
     const filmCards = [
         <Film
-            loading={loading} inFocus={filmInFocus[0]} imgLoaded={imgLoaded}
+            // loading={loading} inFocus={filmInFocus[0]} imgLoaded={imgLoaded}
+            loading={loading} imgLoaded={imgLoaded}
             stillSrc={RememberStill}
             title="Remember."
             director="Jake Feeman"
@@ -42,7 +44,8 @@ function FilmsPage() {
         />,
 
         <Film
-            loading={loading} inFocus={filmInFocus[1]}
+            // loading={loading} inFocus={filmInFocus[1]}
+            loading={loading}
             stillSrc={MWBStill}
             title="Most Welcome Breezes: The Story of Marion Manley"
             director="Ben and Marissa Manley"
@@ -62,7 +65,8 @@ function FilmsPage() {
         />,
 
         <Film
-            loading={loading} inFocus={filmInFocus[2]}
+            // loading={loading} inFocus={filmInFocus[2]}
+            loading={loading}
             stillSrc={ViewPointStill}
             title="View.Point"
             director="Dylan Lange"
@@ -79,7 +83,8 @@ function FilmsPage() {
         />,
 
         <Film
-            loading={loading} inFocus={filmInFocus[3]}
+            // loading={loading} inFocus={filmInFocus[3]}
+            loading={loading}
             stillSrc={SocksStill}
             title="Socks!"
             director="Andrew Howell"
@@ -96,60 +101,60 @@ function FilmsPage() {
 
 
     // 
-    console.log("boutta call useState")
-    for (let index = 0; index < filmCards.length; ++index) {
-        [filmInFocus[index], setFilmInFocus[index]] = useState(false); // eslint-disable-line react-hooks/rules-of-hooks
-    };
+    // console.log("boutta call useState")
+    // for (let index = 0; index < filmCards.length; ++index) {
+    //     [filmInFocus[index], setFilmInFocus[index]] = useState(false); // eslint-disable-line react-hooks/rules-of-hooks
+    // };
 
     // Help remove glitchy image load
     function imgLoaded() {
         setLoading(false);
     }
 
-    function updateFilmFocus() {
-        // filmTop represents distance (signed) from top of el to top of window
-        // filmTop + 600 == 0 ==> 0%
-        // filmTop == windowHeight ==> 100%
-        // The 600 should be a 500 on mobile, but it still looks fine with this math
-        //let filmInFocusTemp = [];
-        //let focusChanged = false;
-        console.log("updating film focus, filmCardElements has " + filmCardElements.length + " items")
-        filmCardElements.forEach((el, index) => {
-            const filmTop = el.getBoundingClientRect()["top"];
-            let percentPastFilm = (filmTop + 600) / (windowHeight + 600);
-            //filmInFocusTemp[index] = (percentPastFilm >= 27 && percentPastFilm <= 73);
-            //if (filmInFocusTemp[index] !== filmInFocus[index]) focusChanged = true;
-            let filmInFocusTemp = (percentPastFilm >= 0.27 && percentPastFilm <= 0.73);
-            if (filmInFocusTemp !== filmInFocus[index]) setFilmInFocus[index](filmInFocusTemp);
-        });
+    // function updateFilmFocus() {
+    //     // filmTop represents distance (signed) from top of el to top of window
+    //     // filmTop + 600 == 0 ==> 0%
+    //     // filmTop == windowHeight ==> 100%
+    //     // The 600 should be a 500 on mobile, but it still looks fine with this math
+    //     //let filmInFocusTemp = [];
+    //     //let focusChanged = false;
+    //     console.log("updating film focus, filmCardElements has " + filmCardElements.length + " items")
+    //     filmCardElements.forEach((el, index) => {
+    //         const filmTop = el.getBoundingClientRect()["top"];
+    //         let percentPastFilm = (filmTop + 600) / (windowHeight + 600);
+    //         //filmInFocusTemp[index] = (percentPastFilm >= 27 && percentPastFilm <= 73);
+    //         //if (filmInFocusTemp[index] !== filmInFocus[index]) focusChanged = true;
+    //         let filmInFocusTemp = (percentPastFilm >= 0.27 && percentPastFilm <= 0.73);
+    //         if (filmInFocusTemp !== filmInFocus[index]) setFilmInFocus[index](filmInFocusTemp);
+    //     });
 
-        //if (focusChanged) setFilmInFocus(filmInFocusTemp);
-    }
+    //     //if (focusChanged) setFilmInFocus(filmInFocusTemp);
+    // }
 
-    function updateWindowDimensions() {
-        setWindowHeight(window.innerHeight);
-        if (filmPageElement != null) updateFilmFocus();
-    }
+    // function updateWindowDimensions() {
+    //     setWindowHeight(window.innerHeight);
+    //     if (filmPageElement != null) updateFilmFocus();
+    // }
 
-    function handleScroll() {
-        if (filmPageElement != null) updateFilmFocus();
-    }
+    // function handleScroll() {
+    //     if (filmPageElement != null) updateFilmFocus();
+    // }
 
-    useEffect(function() {
-        updateWindowDimensions();
-        handleScroll();
-        window.addEventListener('resize', updateWindowDimensions);
-        if (filmPageElement != null) {
-            filmPageElement.addEventListener('scroll', throttledHandleScroll);
-        }
+    // useEffect(function() {
+    //     updateWindowDimensions();
+    //     handleScroll();
+    //     window.addEventListener('resize', updateWindowDimensions);
+    //     if (filmPageElement != null) {
+    //         filmPageElement.addEventListener('scroll', throttledHandleScroll);
+    //     }
 
-        return function() {
-            window.removeEventListener('resize', updateWindowDimensions);
-            if (filmPageElement != null) {
-                filmPageElement.removeEventListener('scroll', throttledHandleScroll);
-            }
-        }
-    });
+    //     return function() {
+    //         window.removeEventListener('resize', updateWindowDimensions);
+    //         if (filmPageElement != null) {
+    //             filmPageElement.removeEventListener('scroll', throttledHandleScroll);
+    //         }
+    //     }
+    // });
 
 
     const filmCardWrappers = filmCards.map((card, index) => 
@@ -165,7 +170,8 @@ function FilmsPage() {
                 but filmmaking is another passion of mine. Check out the films I've worked on." />
         </Helmet>
         <div id="films-header-bkgd" />
-        <div ref={(el) => filmPageElement = el} className="films-page"
+        {/* <div ref={(el) => filmPageElement = el} className="films-page" */}
+        <div className="films-page"
                 style={loading ? {} : {animationName: "films-page-entrance"}}>
             <div className="header-spacer" />
             <div id="filmspage-title">Here are some of my films.</div>
