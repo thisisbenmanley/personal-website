@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f0f2a9654a52e7276c5bdd849dd2bc80",
+    "revision": "9e6fb0cd5f00b13fec9732210b012004",
     "url": "/index.html"
   },
   {
-    "revision": "889c950acd4f05150489",
-    "url": "/static/css/main.e9ebcf1d.chunk.css"
+    "revision": "262959e665fef06a5a10",
+    "url": "/static/css/main.62255984.chunk.css"
   },
   {
-    "revision": "6ac7c03d5a1b2ad95bfe",
-    "url": "/static/js/2.f5414dd4.chunk.js"
+    "revision": "daad49843be5a019251c",
+    "url": "/static/js/2.39fcb1ed.chunk.js"
   },
   {
     "revision": "b28efdd56deb90065a6ed9c886c45c8b",
-    "url": "/static/js/2.f5414dd4.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.39fcb1ed.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "889c950acd4f05150489",
-    "url": "/static/js/main.92944107.chunk.js"
+    "revision": "262959e665fef06a5a10",
+    "url": "/static/js/main.117cdeae.chunk.js"
   },
   {
     "revision": "f139b624154a37532bb8",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "547fb31686b46e24354afff07153b5fe",
     "url": "/static/media/CV.547fb316.png"
+  },
+  {
+    "revision": "8529d5fcf04d52eebe902dc880debb3c",
+    "url": "/static/media/Dafinite.8529d5fc.jpg"
   },
   {
     "revision": "231ad95f1cb0990dbc4edbdbbb36a265",
@@ -140,20 +144,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/blockm-icon.91a2534d.png"
   },
   {
+    "revision": "d26fd8db85c8612bc805b91f15f7f164",
+    "url": "/static/media/dafinite.d26fd8db.pdf"
+  },
+  {
     "revision": "ff65f869f0a1b1ef66d42853152752cd",
     "url": "/static/media/film-icon.ff65f869.png"
   },
   {
     "revision": "5108dfda09de2d25ef4d1646c9d42bc8",
     "url": "/static/media/html-tag-icon.5108dfda.png"
-  },
-  {
-    "revision": "b3a8cdd675796fbda6796745d75db1a4",
-    "url": "/static/media/output.b3a8cdd6.webm"
-  },
-  {
-    "revision": "080e0da1955af285b3d94a5c4a34a5bb",
-    "url": "/static/media/outputdarkerpink.080e0da1.webm"
   },
   {
     "revision": "0728a65c88410748ebc3746a5b5a339a",

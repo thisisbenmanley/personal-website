@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.e9ebcf1d.chunk.css",
-    "main.js": "/static/js/main.92944107.chunk.js",
-    "main.js.map": "/static/js/main.92944107.chunk.js.map",
+    "main.css": "/static/css/main.62255984.chunk.css",
+    "main.js": "/static/js/main.117cdeae.chunk.js",
+    "main.js.map": "/static/js/main.117cdeae.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ce89729d.js",
     "runtime-main.js.map": "/static/js/runtime-main.ce89729d.js.map",
-    "static/js/2.f5414dd4.chunk.js": "/static/js/2.f5414dd4.chunk.js",
-    "static/js/2.f5414dd4.chunk.js.map": "/static/js/2.f5414dd4.chunk.js.map",
+    "static/js/2.39fcb1ed.chunk.js": "/static/js/2.39fcb1ed.chunk.js",
+    "static/js/2.39fcb1ed.chunk.js.map": "/static/js/2.39fcb1ed.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.941fc98053a18ed1ae6cdfc798510f0a.js": "/precache-manifest.941fc98053a18ed1ae6cdfc798510f0a.js",
+    "precache-manifest.26a2f069110c499b638c657994a6a365.js": "/precache-manifest.26a2f069110c499b638c657994a6a365.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.e9ebcf1d.chunk.css.map": "/static/css/main.e9ebcf1d.chunk.css.map",
-    "static/js/2.f5414dd4.chunk.js.LICENSE.txt": "/static/js/2.f5414dd4.chunk.js.LICENSE.txt",
+    "static/css/main.62255984.chunk.css.map": "/static/css/main.62255984.chunk.css.map",
+    "static/js/2.39fcb1ed.chunk.js.LICENSE.txt": "/static/js/2.39fcb1ed.chunk.js.LICENSE.txt",
     "static/media/Ben_Manley_Portrait.jpg": "/static/media/Ben_Manley_Portrait.690051aa.jpg",
     "static/media/Ben_Manley_Resume.pdf": "/static/media/Ben_Manley_Resume.8ff50a6b.pdf",
     "static/media/CV.png": "/static/media/CV.547fb316.png",
+    "static/media/Dafinite.jpg": "/static/media/Dafinite.8529d5fc.jpg",
     "static/media/Dranzleyder.jpg": "/static/media/Dranzleyder.231ad95f.jpg",
     "static/media/EECS_598_Final_Project.pdf": "/static/media/EECS_598_Final_Project.e892b498.pdf",
     "static/media/EarPeaceLogo.png": "/static/media/EarPeaceLogo.a6ad04ec.png",
@@ -40,17 +41,16 @@
     "static/media/Website.jpg": "/static/media/Website.6f9b4821.jpg",
     "static/media/Working.jpg": "/static/media/Working.3ef8c5d4.jpg",
     "static/media/blockm-icon.png": "/static/media/blockm-icon.91a2534d.png",
+    "static/media/dafinite.pdf": "/static/media/dafinite.d26fd8db.pdf",
     "static/media/film-icon.png": "/static/media/film-icon.ff65f869.png",
     "static/media/html-tag-icon.png": "/static/media/html-tag-icon.5108dfda.png",
-    "static/media/output.webm": "/static/media/output.b3a8cdd6.webm",
-    "static/media/outputdarkerpink.webm": "/static/media/outputdarkerpink.080e0da1.webm",
     "static/media/palm-icon.png": "/static/media/palm-icon.0728a65c.png",
     "static/media/work-icon.png": "/static/media/work-icon.e72b2029.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ce89729d.js",
-    "static/js/2.f5414dd4.chunk.js",
-    "static/css/main.e9ebcf1d.chunk.css",
-    "static/js/main.92944107.chunk.js"
+    "static/js/2.39fcb1ed.chunk.js",
+    "static/css/main.62255984.chunk.css",
+    "static/js/main.117cdeae.chunk.js"
   ]
 }
