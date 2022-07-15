@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6e5016e28af91e7e609c04c8d1f29b4a",
+    "revision": "53d718b09462e510096e955ecccda101",
     "url": "/index.html"
   },
   {
-    "revision": "07f920d78a7ff3073dd5",
-    "url": "/static/css/main.62255984.chunk.css"
+    "revision": "073bb0d1e380c3029964",
+    "url": "/static/css/main.b7a2bf23.chunk.css"
   },
   {
-    "revision": "0e2fdaab23ca32b82664",
-    "url": "/static/js/2.990a9b5c.chunk.js"
+    "revision": "568a078bef5508e11094",
+    "url": "/static/js/2.37b6e3cb.chunk.js"
   },
   {
     "revision": "b28efdd56deb90065a6ed9c886c45c8b",
-    "url": "/static/js/2.990a9b5c.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.37b6e3cb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "07f920d78a7ff3073dd5",
-    "url": "/static/js/main.a29015ab.chunk.js"
+    "revision": "073bb0d1e380c3029964",
+    "url": "/static/js/main.82e4dce7.chunk.js"
   },
   {
     "revision": "f139b624154a37532bb8",
@@ -50,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a6ad04ec90626e88ee451cd5b08bf1ae",
     "url": "/static/media/EarPeaceLogo.a6ad04ec.png"
+  },
+  {
+    "revision": "4618243f7fc39685270939d15941cc73",
+    "url": "/static/media/EthicalAI.4618243f.jpg"
   },
   {
     "revision": "0eb15d82e953b458a50c9783f10ac4aa",
@@ -148,12 +152,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/dafinite.d26fd8db.pdf"
   },
   {
+    "revision": "cb26631b9881e89f12eaf37b304cbdd7",
+    "url": "/static/media/ethicalAI.cb26631b.pdf"
+  },
+  {
     "revision": "ff65f869f0a1b1ef66d42853152752cd",
     "url": "/static/media/film-icon.ff65f869.png"
   },
   {
     "revision": "5108dfda09de2d25ef4d1646c9d42bc8",
     "url": "/static/media/html-tag-icon.5108dfda.png"
+  },
+  {
+    "revision": "b3a8cdd675796fbda6796745d75db1a4",
+    "url": "/static/media/output.b3a8cdd6.webm"
+  },
+  {
+    "revision": "080e0da1955af285b3d94a5c4a34a5bb",
+    "url": "/static/media/outputdarkerpink.080e0da1.webm"
   },
   {
     "revision": "0728a65c88410748ebc3746a5b5a339a",
