@@ -11,8 +11,11 @@ function ProjectCard(props) {
             alt={props.title + " project card background picture"}/>
         <div className="pcard-gradient" />
         <div className="pcard-info">
-            <div className="pcard-title">{props.title}</div>
-            <div className="pcard-roles">{props.roles}</div>
+        <div className="pcard-title">{props.title}&nbsp;</div>
+            <div className="pcard-oneline">
+                <div className="pcard-roles">{props.roles}&nbsp;</div>
+                <div className="pcard-years">({props.years})</div>
+            </div>
             {/* <div className="pcard-categories">{props.categories}</div> */}
             <br/>
             <div className="pcard-description">{props.description}</div>

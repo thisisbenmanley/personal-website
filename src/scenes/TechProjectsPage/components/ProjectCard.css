@@ -103,6 +103,17 @@
 }
 
 
+.pcard-oneline {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+
+.pcard-years {
+    
+}
+
+
 .pcard-roles {
     font-style: italic;
 }

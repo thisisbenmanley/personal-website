@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import HyperloopPage from './scenes/HyperloopPage/HyperloopPage';
 import RoboSubPage from './scenes/RoboSubPage/RoboSubPage';
 import QuantumPaperPage from './scenes/QuantumPaperPage/QuantumPaperPage';
+import EthicalAIPaperPage from './scenes/EthicalAIPaperPage/EthicalAIPaperPage';
 import DafinitePaperPage from './scenes/DafinitePaperPage/DafinitePaperPage';
 import FourOhFourPage from '../404Page/404Page';
 
@@ -12,6 +13,7 @@ import HyperloopPic from './Hyperloop.png';
 import RoboSubPic from './RoboSub.jpg';
 import SaniBotPic from './SaniBot.jpg';
 import QuantumPic from './Quantum.jpg';
+import EthicalAIPic from './EthicalAI.jpg';
 import DafinitePic from './Dafinite.jpg';
 import DranzleyderPic from './Dranzleyder.jpg';
 import WWWPic from './WWW.png';
@@ -29,6 +31,7 @@ function TechProjectsPage(props) {
             <Route path={props.match.url+"/hyperloop"} component={HyperloopPage} />
             <Route path={props.match.url+"/robosub"} component={RoboSubPage} />
             <Route path={props.match.url+"/quantum-decoherence"} component={QuantumPaperPage} />
+            <Route path={props.match.url+"/ethical-ai"} component={EthicalAIPaperPage} />
             <Route path={props.match.url+"/dafinite"} component={DafinitePaperPage} />
             <Route path={props.match.url+"/*"} component={FourOhFourPage} />
         </Switch>
@@ -66,6 +69,7 @@ function TechProjectsHomePage(props) {
                 bkgdSrc={HyperloopPic}
                 title="Michigan Hyperloop"
                 categories="Embedded Systems, Real-Time Programming, Management"
+                years="2017-2019"
                 roles="Student Team - Controls/Software Lead"
                 description={<>
                     The computer system and sensor array for a high-speed vehicle
@@ -80,6 +84,7 @@ function TechProjectsHomePage(props) {
                 bkgdSrc={RoboSubPic}
                 title="Michigan Robotic Submarine"
                 categories="Embedded Systems, Real-Time Programming, Autonomy, Management"
+                years="2020-2021"
                 roles="Student Team - Co-Founder, Software Lead"
                 description={<>
                     The control/navigation software for an autonomous underwater
@@ -94,6 +99,7 @@ function TechProjectsHomePage(props) {
                 bkgdSrc={DafinitePic}
                 title="Dafinite"
                 categories="Automatic Verification, Distributed Systems, Research"
+                years="2021"
                 roles="Graduate Course Research Project"
                 description={<>
                     Finitization of Dafny protocols to enable model checking 
@@ -108,6 +114,7 @@ function TechProjectsHomePage(props) {
                 bkgdSrc={SaniBotPic}
                 title="SaniBot"
                 categories="Embedded Systems, Real-Time Programming, Autonomy"
+                years="2021"
                 roles="Senior Design Project"
                 description={<>
                     A robot that autonomously explores, maps, and segments a space and
@@ -122,6 +129,7 @@ function TechProjectsHomePage(props) {
                 bkgdSrc={QuantumPic}
                 title="Quantum Decoherence"
                 categories="Quantum Computing"
+                years="2021"
                 roles="Term Paper"
                 description={<>
                     Final paper for EECS 598: Quantum Information, Probability, and Computing.
@@ -131,10 +139,25 @@ function TechProjectsHomePage(props) {
             />
 
             <ProjectCard
+                loading={loading} imgLoaded={imgLoaded}
+                bkgdSrc={EthicalAIPic}
+                title="Ethical AI Development"
+                categories="AI"
+                years="2022"
+                roles="Term Paper"
+                description={<>
+                    Final paper for UMich's EECS 598: Ethics of AI and Robotics.
+                </>}
+                linkInternal={true}
+                link={props.match.url+"/ethical-ai"}
+            />
+
+            <ProjectCard
                 loading={loading}
                 bkgdSrc={WebsitePic}
                 title="Personal Website"
                 categories="Design, Web Development"
+                years="2020"
                 roles="Independent"
                 description={<>
                     This website - a React app, built and styled from scratch.
@@ -148,6 +171,7 @@ function TechProjectsHomePage(props) {
                 bkgdSrc={DranzleyderPic}
                 title="The Dranzleyder"
                 categories="Browser Extension, Web Development"
+                years="2020"
                 roles="Independent"
                 description={<>
                     A browser extension I made as a joke, live on the Chrome Web Store,
@@ -162,6 +186,7 @@ function TechProjectsHomePage(props) {
                 bkgdSrc={WWWPic}
                 title="Warmer Winter Walks"
                 categories="User Interfaces, Web Development"
+                years="2020"
                 roles="Course Project"
                 description={<>
                     An interactive-map React app that provides routes between
@@ -176,6 +201,7 @@ function TechProjectsHomePage(props) {
                 bkgdSrc={SuperMIDIoBrosPic}
                 title="Super MIDIo Bros"
                 categories="Miscellaneous"
+                years="2018"
                 roles="Hackathon Team Member"
                 description={<>
                     A controller for Super Mario Bros Level 1-1 using a MIDI Keyboard.
