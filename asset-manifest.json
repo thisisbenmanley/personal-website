@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.b7a2bf23.chunk.css",
-    "main.js": "/static/js/main.82e4dce7.chunk.js",
-    "main.js.map": "/static/js/main.82e4dce7.chunk.js.map",
+    "main.css": "/static/css/main.122a0de3.chunk.css",
+    "main.js": "/static/js/main.feaadf7f.chunk.js",
+    "main.js.map": "/static/js/main.feaadf7f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ce89729d.js",
     "runtime-main.js.map": "/static/js/runtime-main.ce89729d.js.map",
-    "static/js/2.37b6e3cb.chunk.js": "/static/js/2.37b6e3cb.chunk.js",
-    "static/js/2.37b6e3cb.chunk.js.map": "/static/js/2.37b6e3cb.chunk.js.map",
+    "static/js/2.bf5fdb61.chunk.js": "/static/js/2.bf5fdb61.chunk.js",
+    "static/js/2.bf5fdb61.chunk.js.map": "/static/js/2.bf5fdb61.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5584d6137e0a3d53f177d405716cc910.js": "/precache-manifest.5584d6137e0a3d53f177d405716cc910.js",
+    "precache-manifest.e2c33d655dc6f0498633f65ac37047f7.js": "/precache-manifest.e2c33d655dc6f0498633f65ac37047f7.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b7a2bf23.chunk.css.map": "/static/css/main.b7a2bf23.chunk.css.map",
-    "static/js/2.37b6e3cb.chunk.js.LICENSE.txt": "/static/js/2.37b6e3cb.chunk.js.LICENSE.txt",
+    "static/css/main.122a0de3.chunk.css.map": "/static/css/main.122a0de3.chunk.css.map",
+    "static/js/2.bf5fdb61.chunk.js.LICENSE.txt": "/static/js/2.bf5fdb61.chunk.js.LICENSE.txt",
     "static/media/Ben_Manley_Portrait.jpg": "/static/media/Ben_Manley_Portrait.690051aa.jpg",
     "static/media/Ben_Manley_Resume.pdf": "/static/media/Ben_Manley_Resume.8ff50a6b.pdf",
     "static/media/CV.png": "/static/media/CV.547fb316.png",
@@ -46,15 +46,13 @@
     "static/media/ethicalAI.pdf": "/static/media/ethicalAI.cb26631b.pdf",
     "static/media/film-icon.png": "/static/media/film-icon.ff65f869.png",
     "static/media/html-tag-icon.png": "/static/media/html-tag-icon.5108dfda.png",
-    "static/media/output.webm": "/static/media/output.b3a8cdd6.webm",
-    "static/media/outputdarkerpink.webm": "/static/media/outputdarkerpink.080e0da1.webm",
     "static/media/palm-icon.png": "/static/media/palm-icon.0728a65c.png",
     "static/media/work-icon.png": "/static/media/work-icon.e72b2029.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ce89729d.js",
-    "static/js/2.37b6e3cb.chunk.js",
-    "static/css/main.b7a2bf23.chunk.css",
-    "static/js/main.82e4dce7.chunk.js"
+    "static/js/2.bf5fdb61.chunk.js",
+    "static/css/main.122a0de3.chunk.css",
+    "static/js/main.feaadf7f.chunk.js"
   ]
 }
