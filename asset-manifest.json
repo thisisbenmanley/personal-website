@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.122a0de3.chunk.css",
-    "main.js": "/static/js/main.085893bf.chunk.js",
-    "main.js.map": "/static/js/main.085893bf.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ce89729d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ce89729d.js.map",
-    "static/js/2.bf5fdb61.chunk.js": "/static/js/2.bf5fdb61.chunk.js",
-    "static/js/2.bf5fdb61.chunk.js.map": "/static/js/2.bf5fdb61.chunk.js.map",
+    "main.css": "/static/css/main.cbf77811.chunk.css",
+    "main.js": "/static/js/main.46f34eac.chunk.js",
+    "main.js.map": "/static/js/main.46f34eac.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8de15931.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8de15931.js.map",
+    "static/js/2.81ae249b.chunk.js": "/static/js/2.81ae249b.chunk.js",
+    "static/js/2.81ae249b.chunk.js.map": "/static/js/2.81ae249b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a55124c7c831f0e93fff30482a45432a.js": "/precache-manifest.a55124c7c831f0e93fff30482a45432a.js",
+    "precache-manifest.f19ac2c8054347b742765fd52b0da541.js": "/precache-manifest.f19ac2c8054347b742765fd52b0da541.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.122a0de3.chunk.css.map": "/static/css/main.122a0de3.chunk.css.map",
-    "static/js/2.bf5fdb61.chunk.js.LICENSE.txt": "/static/js/2.bf5fdb61.chunk.js.LICENSE.txt",
-    "static/media/Ben_Manley_Portrait.jpg": "/static/media/Ben_Manley_Portrait.690051aa.jpg",
-    "static/media/Ben_Manley_Resume.pdf": "/static/media/Ben_Manley_Resume.8ff50a6b.pdf",
+    "static/css/main.cbf77811.chunk.css.map": "/static/css/main.cbf77811.chunk.css.map",
+    "static/js/2.81ae249b.chunk.js.LICENSE.txt": "/static/js/2.81ae249b.chunk.js.LICENSE.txt",
+    "static/media/Ben_Manley_Portrait.jpg": "/static/media/Ben_Manley_Portrait.f869daec.jpg",
+    "static/media/Ben_Manley_Resume.pdf": "/static/media/Ben_Manley_Resume.cd188049.pdf",
     "static/media/CV.png": "/static/media/CV.547fb316.png",
     "static/media/Dafinite.jpg": "/static/media/Dafinite.8529d5fc.jpg",
     "static/media/Dranzleyder.jpg": "/static/media/Dranzleyder.231ad95f.jpg",
@@ -23,6 +23,7 @@
     "static/media/Hyperloop.png": "/static/media/Hyperloop.0eb15d82.png",
     "static/media/Logo.png": "/static/media/Logo.ea495dea.png",
     "static/media/MWBStill.jpg": "/static/media/MWBStill.fdddb72a.jpg",
+    "static/media/OTAYStill.jpg": "/static/media/OTAYStill.15e0ed5f.jpg",
     "static/media/Pod.png": "/static/media/Pod.4dec738d.png",
     "static/media/Quantum.jpg": "/static/media/Quantum.0cacdb9b.jpg",
     "static/media/RememberStill.jpg": "/static/media/RememberStill.30af7b33.jpg",
@@ -50,9 +51,9 @@
     "static/media/work-icon.png": "/static/media/work-icon.e72b2029.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ce89729d.js",
-    "static/js/2.bf5fdb61.chunk.js",
-    "static/css/main.122a0de3.chunk.css",
-    "static/js/main.085893bf.chunk.js"
+    "static/js/runtime-main.8de15931.js",
+    "static/js/2.81ae249b.chunk.js",
+    "static/css/main.cbf77811.chunk.css",
+    "static/js/main.46f34eac.chunk.js"
   ]
 }
