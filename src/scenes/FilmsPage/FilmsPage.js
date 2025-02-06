@@ -7,6 +7,7 @@ import RememberStill from './RememberStill.jpg';
 import ViewPointStill from './ViewPointStill.jpg';
 import MWBStill from './MWBStill.jpg';
 import SocksStill from './SocksStill.jpg';
+import OTAYStill from './OTAYStill.jpg';
 
 import Film from './components/Film';
 import './FilmsPage.css';
@@ -27,6 +28,22 @@ function FilmsPage() {
     // let filmInFocus = [], setFilmInFocus = [];
 
     const filmCards = [
+	<Film
+            // loading={loading} inFocus={filmInFocus[0]} imgLoaded={imgLoaded}
+            loading={loading} imgLoaded={imgLoaded}
+            stillSrc={OTAYStill}
+            title="Only Twice A Year"
+            director="Carolyn and Ben Manley"
+            roles="Co-Director, Co-Writer, Editor, Graphic Artist, Narrator"
+            producedBy="Carolyn Manley"
+            description={<>
+                A family discovers a Jewish cemetery hidden within the grounds of
+                a General Motors auto plant, sharing the stories of its visitors
+                and exploring how this sacred resting place survived when its surroundings didn’t.
+            </>}
+            videoLink="https://vimeo.com/926761417?share=copy"
+        />,
+
         <Film
             // loading={loading} inFocus={filmInFocus[0]} imgLoaded={imgLoaded}
             loading={loading} imgLoaded={imgLoaded}
@@ -39,7 +56,6 @@ function FilmsPage() {
                 A high school girl returns to the site of a school shooting to 
                 reclaim the legacy of her murdered best friend.
             </>}
-            // embedSrc="https://drive.google.com/file/d/1Y2WMJIQgwBap51tsMzGWRJB5mkQKF8a2/preview"
             videoLink="https://drive.google.com/file/d/1Y2WMJIQgwBap51tsMzGWRJB5mkQKF8a2/view"
         />,
 
@@ -49,7 +65,7 @@ function FilmsPage() {
             stillSrc={MWBStill}
             title="Most Welcome Breezes: The Story of Marion Manley"
             director="Ben and Marissa Manley"
-            roles="Director, Cinematographer, Editor, Writer, Narrator"
+            roles="Director, Writer, Cinematographer, Editor, Narrator"
             awards={<>
                 {MWBAward1}<br/>{MWBAward2}
             </>}
@@ -60,7 +76,6 @@ function FilmsPage() {
                 Made in high school with my sister.{" "}
                 <a href="https://www.miamiherald.com/living/article57137568.html" className="link-style"  target="_blank" rel="noopener noreferrer">In the news.</a>
             </>}
-            // embedSrc="https://www.youtube.com/embed/ndou7BDIi1k"
             videoLink="https://www.youtube.com/watch?v=5BSjBLa1ElY"
         />,
 
@@ -78,7 +93,6 @@ function FilmsPage() {
                 to move past a traumatic experience, all the while avoiding 
                 the company’s security network.
             </>}
-            // embedSrc="https://player.vimeo.com/video/268285544"
             videoLink="https://vimeo.com/268285544"
         />,
 
@@ -94,7 +108,6 @@ function FilmsPage() {
                 A sock puppeteer explores his feelings on relationships with 
                 the help of his sentient puppet.
             </>}
-            // embedSrc="https://player.vimeo.com/video/315528260"
             videoLink="https://vimeo.com/315528260"
         />,
     ];

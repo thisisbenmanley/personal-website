@@ -41,8 +41,8 @@ function AboutPage() {
         <>
         <Helmet>
             <title>Ben Manley | About</title>
-            <meta name="description" content="I'm Ben Manley, a Computer Science student 
-                and filmmaker at the University of Michigan. Check out my site!" />
+            <meta name="description" content="I'm Ben Manley, a Software Engineer and 
+                filmmaker. Check out my site!" />
         </Helmet>
         <div className="about-page"
             style={loading ? {} : {animationName: "about-page-entrance"}}>
@@ -96,7 +96,7 @@ function AboutPage() {
                 <div className="about-li-container">
                     <div className="about-li about-li-iconIsRight">
                         <div>
-                            I'm graduating from the <span className="about-emphasis">University of Michigan</span> in 2022 with
+                            I graduated from the <span className="about-emphasis">University of Michigan</span> in 2022 with
                             a <a style={{color: colors["michigan"]}} href="https://cse.engin.umich.edu/" className="link-style" target="_blank" rel="noopener noreferrer">Master's in Computer Science Engineering</a> and an undergraduate
                             minor in Physics.
                         </div>
@@ -108,7 +108,7 @@ function AboutPage() {
                         <img src={htmlTagIcon} alt="html tag icon" />
                         <div>
                             I plan to explore as many topics within Computer Science as I can. So far, my <NavLink style={{color: colors["cs"]}} to="/projects" className="link-style">projects</NavLink>{" "}
-                            have focused on <span className="about-emphasis">embedded systems</span>, <span className="about-emphasis">real-time programming</span>, and <span className="about-emphasis">autonomous robotics</span>, and I'm dabbling in
+                            and job have focused on <span className="about-emphasis">embedded systems</span>, <span className="about-emphasis">real-time programming</span>, <span className="about-emphasis">networking</span>, and <span className="about-emphasis">autonomous robotics</span>, and I've dabbled in
                             web development <span>(check <a style={{color: colors["cs"]}} href="/" className="link-style" target="_blank" rel="noopener noreferrer">this cool website</a> out!).</span>
                         </div>
                     </div>
@@ -127,8 +127,9 @@ function AboutPage() {
                     <div className="about-li about-li-iconIsLeft">
                         <img src={workIcon} alt="work icon" />
                         <div>
-                            I've completed internships developing planetary exploration technology at <a style={{color: colors["work"]}} href="https://honeybeerobotics.com" className="link-style nowrap" target="_blank" rel="noopener noreferrer">Honeybee Robotics</a>, owning core features on the router for <a style={{color: colors["work"]}} href="https://www.starlink.com/" className="link-style nowrap" target="_blank" rel="noopener noreferrer">SpaceX's Starlink</a> internet satellite system, and
-                            improving Microsoft Teams in the <a style={{color: colors["work"]}} href="https://www.microsoft.com/en-us/garage/" className="link-style nowrap" target="_blank" rel="noopener noreferrer">Microsoft Garage</a>.
+                            After completing internships developing planetary exploration technology at <a style={{color: colors["work"]}} href="https://honeybeerobotics.com" className="link-style nowrap" target="_blank" rel="noopener noreferrer">Honeybee Robotics</a> and
+                            improving Microsoft Teams in the <a style={{color: colors["work"]}} href="https://www.microsoft.com/en-us/garage/" className="link-style nowrap" target="_blank" rel="noopener noreferrer">Microsoft Garage</a>,
+                            I converted full time to work on the WiFi and Enterprise Software teams for <a style={{color: colors["work"]}} href="https://www.starlink.com/" className="link-style nowrap" target="_blank" rel="noopener noreferrer">SpaceX's Starlink</a> internet satellite system.
                         </div>
                     </div>
                 </div>
@@ -172,11 +173,12 @@ function AboutPage() {
                         </li>
                         <li className="fun-facts-li">
                             I was the photographer for the album cover of a{" "}
-                            <a href="http://www.nestortorres.com/8-music/4-nestor-torres-jazz-flute-traditions" className="link-style" target="_blank" rel="noopener noreferrer">
+                            <a href="https://nestortorres.com/jazz-flute-traditions/" className="link-style" target="_blank" rel="noopener noreferrer">
                                 Latin-Grammy-nominated Jazz album
                             </a>
                         </li>
                     </ul>
+                    <br/>
                 </div>
             </div>
         </div>
