@@ -17,7 +17,9 @@ function Film(props) {
                 alt={"'" + props.title + "' Film Still"}/>
             <div className="film-inner">
                 <div className="film-info">
-                    <div className="film-title">{props.title}</div>
+                    <div className="film-titleyear">
+                        <div className="film-title">{props.title}</div>&nbsp;({props.year})
+                    </div>
                     <div className="film-roles">{props.roles}</div>
                     <div className="film-awards">{props.awards}</div>
                     <br/>

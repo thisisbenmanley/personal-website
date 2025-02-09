@@ -70,11 +70,26 @@
 }
 
 
-.film-title {
+.film-titleyear {
     font-size: 200%;
     line-height: 100%;
     font-family: 'Jost';
+    font-weight: normal;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+
+.film-title {
     font-style: italic;
+    display: inline;
+}
+
+
+.film-year {
+    font-size: 200%;
+    line-height: 100%;
+    font-family: 'Jost';
     font-weight: normal;
     margin-bottom: 10px;
     z-index: 2;

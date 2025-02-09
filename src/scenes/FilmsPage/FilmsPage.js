@@ -33,6 +33,7 @@ function FilmsPage() {
             loading={loading} imgLoaded={imgLoaded}
             stillSrc={OTAYStill}
             title="Only Twice A Year"
+            year="2024"
             director="Carolyn and Ben Manley"
             roles="Co-Director, Co-Writer, Editor, Graphic Artist, Narrator"
             producedBy="Carolyn Manley"
@@ -49,6 +50,7 @@ function FilmsPage() {
             loading={loading} imgLoaded={imgLoaded}
             stillSrc={RememberStill}
             title="Remember."
+            year="2019"
             director="Jake Feeman"
             roles="Associate Producer, Editor"
             producedBy={MaginationLink}
@@ -64,6 +66,7 @@ function FilmsPage() {
             loading={loading}
             stillSrc={MWBStill}
             title="Most Welcome Breezes: The Story of Marion Manley"
+            year="2015"
             director="Ben and Marissa Manley"
             roles="Director, Writer, Cinematographer, Editor, Narrator"
             awards={<>
@@ -84,6 +87,7 @@ function FilmsPage() {
             loading={loading}
             stillSrc={ViewPointStill}
             title="View.Point"
+            year="2018"
             director="Dylan Lange"
             roles="Head of Sound / Sound Recordist"
             producedBy={MaginationLink}
@@ -101,6 +105,7 @@ function FilmsPage() {
             loading={loading}
             stillSrc={SocksStill}
             title="Socks!"
+            year="2019"
             director="Andrew Howell"
             roles="Head of Sound / Sound Recordist"
             producedBy={MaginationLink}
