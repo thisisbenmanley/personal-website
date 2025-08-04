@@ -8,6 +8,7 @@ import ViewPointStill from './ViewPointStill.jpg';
 import MWBStill from './MWBStill.jpg';
 import SocksStill from './SocksStill.jpg';
 import OTAYStill from './OTAYStill.jpg';
+import CIFFAward from './CIFF.png';
 
 import Film from './components/Film';
 import './FilmsPage.css';
@@ -36,6 +37,7 @@ function FilmsPage() {
             year="2024"
             director="Carolyn and Ben Manley"
             roles="Co-Director, Co-Writer, Editor, Graphic Artist, Narrator"
+	    laurel={CIFFAward}
             producedBy="Carolyn Manley"
             description={<>
                 A family discovers a Jewish cemetery hidden within the grounds of
@@ -69,7 +71,7 @@ function FilmsPage() {
             year="2015"
             director="Ben and Marissa Manley"
             roles="Director, Writer, Cinematographer, Editor, Narrator"
-            awards={<>
+            awardsText={<>
                 {MWBAward1}<br/>{MWBAward2}
             </>}
             producedBy="my family"

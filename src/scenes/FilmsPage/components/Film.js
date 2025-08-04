@@ -21,7 +21,10 @@ function Film(props) {
                         <div className="film-title">{props.title}</div>&nbsp;({props.year})
                     </div>
                     <div className="film-roles">{props.roles}</div>
-                    <div className="film-awards">{props.awards}</div>
+                    <div className="film-awards-text">{props.awardsText}</div>
+	            {props.laurel && 
+	                <img onLoad={props.imgLoaded} src={props.laurel} className="film-laurel"
+	                    alt={"'" + props.title + "' Film Festival Laurel"}/>}
                     <br/>
                     <div className="film-description">{props.description}</div>
                 </div>
